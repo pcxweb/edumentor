@@ -44,13 +44,15 @@ $(function(){
 	$("#cancelbtn").click(function(){
 		$(".contactForm").toggle()
 	})
-
+	// 企业荣誉轮播
 	var mySwiper = new Swiper('.swipercon1', {
 		navigation: {
 			nextEl: '.z-next',
 			prevEl: '.z-prev',
 		},
-	    slidesPerView : 3
+		loop: true,
+	    slidesPerView : 3,
+	    loopedSlides: 6
 	})
 
 	// 提前规划切换
@@ -58,6 +60,27 @@ $(function(){
 		var indexval = $(this).index()
 		$(this).addClass('active').siblings('li').removeClass('active')
 		$("#plan .right"+indexval).addClass("active").siblings('.pcon-right').removeClass('active')
+	})
+
+	// 留学服务产品
+	$("#service .itembox .item").mouseover(function(){
+		var indexs = $(this).index();
+
+		$(this).find(".obj_item").css("display","none")
+		$(this).find(".obj_button").css("display","block")
+	})
+	$("#service .itembox .item").mouseout(function(){
+		var indexs = $(this).index();
+
+		$(this).find(".obj_item").css("display","block")
+		$(this).find(".obj_button").css("display","none")
+	})
+	// 点击开启留学之旅
+	$("#service .itembox .obj_button").click(function(){
+		$("#overseacar").css("display","block")
+		var topval = $("#overseacar").offset().top
+		console.log(topval)
+		$(window).scrollTop(topval-20)
 	})
 
 
