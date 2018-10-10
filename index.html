@@ -54,18 +54,18 @@
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-right">
+     <!--  <form class="navbar-form navbar-right">
         <div class="form-group">
           <span class="fa fa-search"></span><input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Login</button>
-      </form>
+      </form> -->
     </div>
   </div>
 </nav>
 <div id="banner">
 	<a id="banner_img" href="javascript:;"><img src="img/banner.jpg" alt=""></a>
-	<div class="contactForm">
+	<div class="contactForm" id="overseacar">
 		<div class="title">留学直通车</div>
 		<div class="base">
 			<input type="text" placeholder="姓名">
@@ -75,6 +75,15 @@
 			<div class="item">
 				<select name="conutry" id="conutry">
 					<option value="">计划出国时间</option>
+					<option value="1">今年</option>
+					<option value="2">2019</option>
+					<option value="3">2020</option>
+					<option value="3">三年以后</option>
+				</select>
+			</div>
+			<div class="item">
+				<select name="conutry" id="conutry">
+					<option value="">我要申请</option>
 					<option value="1">美国</option>
 					<option value="2">英国</option>
 					<option value="3">加拿大</option>
@@ -82,15 +91,6 @@
 					<option value="5">新西兰</option>
 					<option value="6">中国香港</option>
 					<option value="6">其他</option>
-				</select>
-			</div>
-			<div class="item">
-				<select name="conutry" id="conutry">
-					<option value="">我要申请</option>
-					<option value="1">今年</option>
-					<option value="2">2019</option>
-					<option value="3">2020</option>
-					<option value="3">三年以后</option>
 				</select>
 			</div>
 			<div class="item">
@@ -138,9 +138,9 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section style="padding: 0px">
 		<div class="en_nav enfonts">
-			Since We Are The Best
+			Since We Are The Best mentor
 		</div>
 	</section>
 	<section id="develop">
@@ -157,7 +157,7 @@
 					<div class="desc">6月广州一盟教育咨询有限公司简称“一盟教育”）在广州正式成立 </div>
 				</div>
 				<div class="item">
-					<div class="desc">一盟教育分别在中山，惠州和佛山开设分公司  </div>
+					<div class="desc" style="top: -180px;">一盟教育分别在中山，惠州和佛山开设分公司  </div>
 					<div class="line"></div>
 					<div class="num">2015</div>
 				</div>
@@ -257,6 +257,7 @@
 							<p><span>英国</span>留学申请</p>
 							<div class="obj_item">目标国家：英国</div>
 							<div class="obj_item">申请项目：本科/硕士</div>
+							<div class="obj_button"><button type="button" class="btn">开启申请之旅</button></div>
 						</div>
 					</div>
 				</div>
@@ -269,6 +270,7 @@
 							<p><span>美国</span>留学申请</p>
 							<div class="obj_item">目标国家：美国</div>
 							<div class="obj_item">申请项目：本科/硕士</div>
+							<div class="obj_button"><button type="button" class="btn">开启申请之旅</button></div>
 						</div>
 					</div>
 				</div>
@@ -281,6 +283,7 @@
 							<p><span>加拿大</span>留学申请</p>
 							<div class="obj_item">目标国家：加拿大</div>
 							<div class="obj_item">申请项目：本科/硕士</div>
+							<div class="obj_button"><button type="button" class="btn">开启申请之旅</button></div>
 						</div>
 					</div>
 				</div>
@@ -293,6 +296,7 @@
 							<p><span>澳洲</span>留学申请</p>
 							<div class="obj_item">目标国家：澳大利亚或新西兰</div>
 							<div class="obj_item">申请项目：本科/硕士</div>
+							<div class="obj_button"><button type="button" class="btn">开启申请之旅</button></div>
 						</div>
 					</div>
 				</div>
@@ -305,6 +309,7 @@
 							<p><span>中国香港</span>留学申请</p>
 							<div class="obj_item">目标国家：中国香港</div>
 							<div class="obj_item">申请项目：本科/硕士</div>
+							<div class="obj_button"><button type="button" class="btn">开启申请之旅</button></div>
 						</div>
 					</div>
 				</div>
@@ -365,7 +370,7 @@
 			</div>
 			<div class="major_box clearfix">
 				<div class="items">
-					<div class="icon"><img src="img/major1.png" alt=""></div>
+					<div class="icon"><span class="fa fa-caret-right"></span><img src="img/major1.png" alt=""></div>
 					<h3>咨询签约</h3>
 					<ul>
 						<li>签约缴纳服务费</li>
@@ -374,7 +379,7 @@
 					</ul>
 				</div>
 				<div class="items">
-					<div class="icon"><img src="img/major2.png" alt=""></div>
+					<div class="icon"><span class="fa fa-caret-right"></span><img src="img/major2.png" alt=""></div>
 					<h3>语言提升</h3>
 					<ul>
 						<li>制定学习时间规划</li>
@@ -383,7 +388,7 @@
 					</ul>
 				</div>
 				<div class="items">
-					<div class="icon"><img src="img/major3.png" alt=""></div>
+					<div class="icon"><span class="fa fa-caret-right"></span><img src="img/major3.png" alt=""></div>
 					<h3>文书写作</h3>
 					<ul>
 						<li>依据学生情况，制定个性化方案</li>
@@ -391,7 +396,7 @@
 					</ul>
 				</div>
 				<div class="items">
-					<div class="icon"><img src="img/major4.png" alt=""></div>
+					<div class="icon"><span class="fa fa-caret-right"></span><img src="img/major4.png" alt=""></div>
 					<h3>获得录取</h3>
 					<ul>
 						<li>通知客户最新申请进度</li>
@@ -399,7 +404,7 @@
 					</ul>
 				</div>
 				<div class="items">
-					<div class="icon"><img src="img/major5.png" alt=""></div>
+					<div class="icon"><span class="fa fa-caret-right"></span><img src="img/major5.png" alt=""></div>
 					<h3>签证办理</h3>
 					<ul>
 						<li>整理全套签证申请资料</li>
@@ -408,7 +413,7 @@
 					</ul>
 				</div>
 				<div class="items">
-					<div class="icon"><img src="img/major6.png" alt=""></div>
+					<div class="icon"><span class="fa fa-caret-right"></span><img src="img/major6.png" alt=""></div>
 					<h3>行前指导</h3>
 					<ul>
 						<li>免费享受行前指导服务</li>
@@ -416,7 +421,7 @@
 					</ul>
 				</div>
 				<div class="items">
-					<div class="icon"><img src="img/major7.png" alt=""></div>
+					<div class="icon"><span class="fa fa-caret-right"></span><img src="img/major7.png" alt=""></div>
 					<h3>海外服务</h3>
 					<ul>
 						<li>跟进学习与生活情况</li>
@@ -424,7 +429,8 @@
 					</ul>
 				</div>
 				<div class="bottomdesc">
-					专心 • 细心 • 专业 • 满意
+					<span class="fa fa-caret-left"></span>
+					<img src="img/bottomdesc.png" alt="">
 				</div>
 			</div>
 		</div>
