@@ -79,7 +79,7 @@ $(function(){
 	$("#service .itembox .obj_button").click(function(){
 		$("#overseacar").css("display","block")
 		var topval = $("#overseacar").offset().top
-		console.log(topval)
+		// console.log(topval)
 		$(window).scrollTop(topval-20)
 	})
 
