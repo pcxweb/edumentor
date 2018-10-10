@@ -15,10 +15,10 @@ certifySwiper = new Swiper('#certify .swipercon2', {
 				var slideProgress = this.slides[i].progress;
 				modify = 1;
 				if (Math.abs(slideProgress) > 1) {
-					modify = (Math.abs(slideProgress) - 1) * 0.5 + 1;
+					modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
 				}
-				translate = slideProgress * modify * 120 + 'px';
-				scale = 1 - Math.abs(slideProgress) / 4.6;
+				translate = slideProgress * modify * 90 + 'px';
+				scale = 1 - Math.abs(slideProgress) / 6;
 				zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
 				slide.transform('translateX(' + translate + ') scale(' + scale + ')');
 				slide.css('zIndex', zIndex);
@@ -39,11 +39,26 @@ certifySwiper = new Swiper('#certify .swipercon2', {
 })
 $(function(){
 	$("#banner_img").click(function(){
-		$(".contactForm").toggle()
+		$("#banner .contactForm").toggle()
 	})
 	$("#cancelbtn").click(function(){
-		$(".contactForm").toggle()
+		$("#banner .contactForm").toggle()
 	})
+	$("#team .teambtn").click(function(){
+		$("#train_modal").modal('show')
+	})
+	$("#cancelbtn2").click(function(){
+		$("#train_modal").modal('hide')
+		
+	})
+	$('#train_modal').on('show.bs.modal', function (e) {  
+	    // 关键代码，如没将modal设置为 block，则$modala_dialog.height() 为零  
+	    $(this).css('display', 'block');  
+	    var modalHeight=$(window).height() / 2 - $('#train_modal .modal-dialog').height() / 2;  
+	    $(this).find('.modal-dialog').css({  
+	        'margin-top': modalHeight  
+	    });  
+	});
 	// 企业荣誉轮播
 	var mySwiper = new Swiper('.swipercon1', {
 		navigation: {

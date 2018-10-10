@@ -4,7 +4,7 @@
 #certify {
 	position: relative;
 	width:100%;
-	max-width: 800px;
+	max-width: 900px;
 	margin: 0 auto;
 }
 
@@ -13,8 +13,8 @@
 }
 
 #certify  .swiper-slide {
-	width: 300px;
-	height: 460px;
+	width: 350px;
+	height: 450px;
 	background: #fff;
 	box-shadow: 0 8px 30px #ddd;
 	border:1px solid #ddd;
@@ -108,7 +108,7 @@
 	font-weight: bold;
 }
 .item  .contact{
-	max-width: 200px;
+	max-width: 210px;
 	display: inline-block;
 	font-size: 12px;
 	text-align: center;

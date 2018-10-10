@@ -81,11 +81,11 @@
 					<option value="4">澳洲</option>
 					<option value="5">新西兰</option>
 					<option value="6">中国香港</option>
-					<option value="6">其他</option>
+					<option value="7">其他</option>
 				</select>
 			</div>
 			<div class="item">
-				<select name="conutry" id="conutry">
+				<select name="conutry" id="dates">
 					<option value="">计划出国时间</option>
 					<option value="1">今年</option>
 					<option value="2">2019</option>
@@ -93,6 +93,7 @@
 					<option value="3">三年以后</option>
 				</select>
 			</div>
+			
 			<div class="item">
 				<select name="apply" id="apply">
 					<option value="">我要申请</option>
@@ -549,7 +550,7 @@
 									<div class="contact">
 										<p>雅思总分8分，阅读满分，教学风格幽默风趣。</p>
 										<p>主攻阅读、写作及SAT/ACT，十年以上留学课程教学经验。</p>
-										<p><button type="button">咨询</button></p>
+										<p><button  class="teambtn" type="button">咨询</button></p>
 									</div>
 								</div>
 							</div>
@@ -561,7 +562,7 @@
 									<div class="contact">
 										<p>主攻雅思口语、剑桥英语教学。</p>
 										<p>强调口语“情景剧学习法”，注重和学生的交流沟通。</p>
-										<p><button type="button">咨询</button></p>
+										<p><button class="teambtn" type="button">咨询</button></p>
 									</div>
 								</div>
 							</div>
@@ -573,7 +574,7 @@
 									<div class="contact">
 										<p>澳洲新南威尔士大学英汉翻译硕士，并获得澳洲NAATI翻译认证资格。</p>
 										<p>主攻雅思听力，深谙各国院校信息、申请流程等留学程序。</p>
-										<p><button type="button">咨询</button></p>
+										<p><button class="teambtn" type="button">咨询</button></p>
 									</div>
 								</div>
 							</div>
@@ -585,7 +586,7 @@
 									<div class="contact">
 										<p>雅思听力9分达人。主攻口语、听力教研教学，十二年教学经验。</p>
 										<p>教出数十位雅思单项8.5分，托福单单项28分以上的学员。</p>
-										<p><button type="button">咨询</button></p>
+										<p><button class="teambtn" type="button">咨询</button></p>
 									</div>
 								</div>
 							</div>
@@ -597,7 +598,7 @@
 									<div class="contact">
 										<p>中山大学硕士，多年初高中教学辅导经验。</p>
 										<p>主攻海外学术课程的数学、化学、生物等科目。</p>
-										<p><button type="button">咨询</button></p>
+										<p><button class="teambtn" type="button">咨询</button></p>
 									</div>
 								</div>
 							</div>
@@ -609,7 +610,7 @@
 									<div class="contact">
 										<p>香港科技大学硕士，英语翻译学士，曾就任于香港中华总商会(CGCC)。</p>
 										<p>主攻雅思写作，具备丰富的高端文书撰写和院校申请经验。</p>
-										<p><button type="button">咨询</button></p>
+										<p><button class="teambtn" type="button">咨询</button></p>
 									</div>
 								</div>
 							</div>
@@ -715,6 +716,61 @@
 		</div>
 	</section>
 </main>
+<!-- 语言培训咨询模态框 -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" id="train_modal" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      	<div class="contactForm">
+      		<form action="">
+				<div class="title">语言培训咨询</div>
+				<div class="base">
+					<input type="text" placeholder="姓名">
+					<input type="text" placeholder="手机号码*">
+				</div>
+				<div class="choosebox">
+					<div class="item">
+						<select name="conutry" id="tconutry">
+							<option value="">国家的选择</option>
+							<option value="1">美国</option>
+							<option value="2">英国</option>
+							<option value="3">加拿大</option>
+							<option value="4">澳洲</option>
+							<option value="5">新西兰</option>
+							<option value="6">中国香港</option>
+							<option value="7">其他</option>
+						</select>
+					</div>
+					<div class="item">
+						<select name="conutry" id="tclass">
+							<option value="">课程类别</option>
+							<option value="1">雅思</option>
+							<option value="2">托福</option>
+							<option value="3">海外中学考试</option>
+							<option value="4">论文写作</option>
+							<option value="5">国际课程</option>
+							<option value="6">STEP数学课程</option>
+							<option value="7">英语基础课程</option>
+						</select>
+					</div>
+					<div class="item">
+						<select name="apply" id="tcity">
+							<option value="">所在城市</option>
+							<option value="1">广州</option>
+							<option value="2">中山</option>
+							<option value="3">惠州</option>
+							<option value="4">佛山</option>
+						</select>
+					</div>
+				</div>
+				<div class="btn_box">
+					<button type="button" id="subbtn2">提交</button>
+					<button type="button" id="cancelbtn2">取消</button>
+				</div>
+			</form>
+		</div>
+    </div>
+  </div>
+</div>
 <footer>
 	<div class="container clearfix" id="footbox">
 		<div class="f-desc">

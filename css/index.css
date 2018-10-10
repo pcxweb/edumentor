@@ -18,7 +18,7 @@
 	overflow: hidden;
 	display: none;
 }
-#banner .contactForm .title{
+.contactForm .title{
 	color: #fff;
 	background-color: #f8b62c;
 	text-align: center;
@@ -26,46 +26,46 @@
 	font-size: 16px;
 	font-weight: bold;
 }
-#banner .contactForm .base{
+.contactForm .base{
 	display: flex;
 	justify-content: space-between;
 	margin:10px 0;
 	padding:0 15px;
 	margin-bottom: 20px;
 }
-#banner .contactForm .base input{
+.contactForm .base input{
 	border-bottom: 1px solid #ccc;
 	width: 110px;
 }
-#banner .contactForm .choosebox{
+.contactForm .choosebox{
 	display: flex;
 	flex-direction: column;
 	padding:0 15px;
 }
-#banner .contactForm .choosebox .item{
+.contactForm .choosebox .item{
 	border:1px solid #ccc;
 	margin-bottom: 20px;
 	padding:5px;
 }
-#banner .contactForm .choosebox .item select,.choosebox .item input{
+.contactForm .choosebox .item select,.choosebox .item input{
 	width: 100%
 }
-#banner .contactForm .btn_box{
+.contactForm .btn_box{
 	padding:0 15px;
 
 }
-#banner .contactForm .btn_box button{
+.contactForm .btn_box button{
 	width: 100%;
 	padding:5px 0;
 	margin-bottom: 15px;
 }
-#banner .contactForm .btn_box #subbtn{
+.contactForm .btn_box #subbtn,.contactForm .btn_box #subbtn2{
 	background-color: #fbb03b;
 	color: #fff;
 	border:1px solid #faa31a;
 	border-radius:10px;
 }
-#banner .contactForm .btn_box #cancelbtn{
+.contactForm .btn_box #cancelbtn,.contactForm .btn_box #cancelbtn2{
 	background-color: transparent;
 	color: #cacaca;
 }
@@ -572,6 +572,16 @@
 .partnerlist>div p{
 	text-align: center;
 	margin-top: 5px;
-	color: #727171
+	color: #727171;
+	font-size: 16px;
 }
 
+/*培训模态框*/
+#train_modal .contactForm{
+	display: block;
+	position: inherit;
+}
+#train_modal .contactForm .title{
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
