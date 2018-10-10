@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1190, user-scalable=no">
+	<title>一盟教育</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/certify2.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default">
+  <div class="container-fluid container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navlist" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navlist">
+      <ul class="nav navbar-nav">
+        <li class="actives"><a href="index.html">首页</a></li>
+        <!-- <li><a href="oversea.html">留学</a></li> -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">留学 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="oversea.html?country=America">美国</a></li>
+            <li><a href="oversea.html?country=Britain">英国</a></li>
+            <li><a href="oversea.html?country=Australia">澳洲</a></li>
+            <li><a href="oversea.html?country=Canada">加拿大</a></li>
+            <li><a href="oversea.html?country=Hongkong">香港</a></li>
+          </ul>
+        </li>
+        <!-- <li>
+        	<a href="#">语言培训</a>
+        </li> -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">语言培训 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="language_train.html?language=1">雅思课程</a></li>
+            <li><a href="language_train.html?language=2">托福课程</a></li>
+            <li><a href="language_train.html?language=3">海外中学考试</a></li>
+            <li><a href="language_train.html?language=4">论文写作</a></li>
+            <li><a href="language_train.html?language=5">国际课程</a></li>
+            <li><a href="language_train.html?language=6">STEP数学</a></li>
+            <li><a href="language_train.html?language=7">英语基础课程</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <span class="fa fa-search"></span><input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Login</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div id="banner">
+	<a id="banner_img" href="javascript:;"><img src="img/banner.jpg" alt=""></a>
+	<div class="contactForm">
+		<div class="title">留学直通车</div>
+		<div class="base">
+			<input type="text" placeholder="姓名">
+			<input type="text" placeholder="手机号码*">
+		</div>
+		<div class="choosebox">
+			<div class="item">
+				<select name="conutry" id="conutry">
+					<option value="">计划出国时间</option>
+					<option value="1">美国</option>
+					<option value="2">英国</option>
+					<option value="3">加拿大</option>
+					<option value="4">澳洲</option>
+					<option value="5">新西兰</option>
+					<option value="6">中国香港</option>
+					<option value="6">其他</option>
+				</select>
+			</div>
+			<div class="item">
+				<select name="conutry" id="conutry">
+					<option value="">我要申请</option>
+					<option value="1">今年</option>
+					<option value="2">2019</option>
+					<option value="3">2020</option>
+					<option value="3">三年以后</option>
+				</select>
+			</div>
+			<div class="item">
+				<select name="apply" id="apply">
+					<option value="">我要申请</option>
+					<option value="1">高中</option>
+					<option value="2">本科</option>
+					<option value="3">硕士</option>
+					<option value="4">博士</option>
+				</select>
+			</div>
+		</div>
+		<div class="btn_box">
+			<button type="button" id="subbtn">提交</button>
+			<button type="button" id="cancelbtn">取消</button>
+		</div>
+	</div>
+</div>
+<main>
+	<section id="about">
+		<div class="container conbox" >
+			<h2>关于一盟</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="txtbox">
+				<div class="txt-title">我们专注于海内外升学一站式服务！</div>
+				<p>广州一盟教育咨询有限公司是教育部认证具有“自费出国留学中介服务机构资格”的专业海外升学机构。 一盟教育在英国，澳洲和美洲主要城市都有我们的学生服务点，专门为我们的海外学子们提供后续服务，服务包括海外再升学，续签，未成年人合法监护，职业规划辅导，技术移民等高品质、全方位的国际教育服务。</p>
+			</div>
+			<div class="iconbox row">
+				<div class="item col-md-3 col-xs-6">
+					<div><img src="img/icon1.png" alt=""></div>
+					<p>教育部白名单</p>
+				</div>
+				<div class="item col-md-3 col-xs-6">
+					<div><img src="img/icon2.png" alt=""></div>
+					<p>一站式服务</p>
+				</div>
+				<div class="item col-md-3 col-xs-6">
+					<div><img src="img/icon3.png" alt=""></div>
+					<p>海外服务点</p>
+				</div>
+				<div class="item col-md-3 col-xs-6">
+					<div><img src="img/icon4.png" alt=""></div>
+					<p>1000+院校合作</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="en_nav enfonts">
+			Since We Are The Best
+		</div>
+	</section>
+	<section id="develop">
+		<div class="conbox container">
+			<h2>发展历程</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="txtbox">
+				<div class="txt-title">为了更好的服务，一盟在不断成长！</div>
+			</div>
+			<div class="itembox clearfix">
+				<div class="item">
+					<div class="num">2014</div>
+					<div class="line"></div>
+					<div class="desc">6月广州一盟教育咨询有限公司简称“一盟教育”）在广州正式成立 </div>
+				</div>
+				<div class="item">
+					<div class="desc">一盟教育分别在中山，惠州和佛山开设分公司  </div>
+					<div class="line"></div>
+					<div class="num">2015</div>
+				</div>
+				<div class="item">
+					<div class="num">2016</div>
+					<div class="line"></div>
+					<div class="desc">12月成为第二届广东省留学协会正式会员 </div>
+				</div>
+				<div class="item">
+					<div class="desc">10月一盟教育审批通过并获得全国首批‘采用国家标准留学服务机构’之一 </div>
+					<div class="line"></div>
+					<div class="num">2017</div>
+				</div>
+				<div class="item">
+					<div class="num">2018</div>
+					<div class="line"></div>
+					<div class="desc">一盟教育在广州越秀开设分公司</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="honor">
+		<div class="container conbox">
+			<h2>企业荣誉</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="banner">
+				<div class="swiper-container swipercon1">
+				  <div class="swiper-wrapper">
+				    <div class="swiper-slide">
+				    	<img src="img/honor1.png" alt="">
+				    </div>
+				    <div class="swiper-slide">
+						<img src="img/honor2.png" alt="">
+				    </div>
+				    <div class="swiper-slide">
+						<img src="img/honor3.png" alt="">
+				    </div>
+				     <div class="swiper-slide">
+						<img src="img/honor4.png" alt="">
+				    </div>
+				    <div class="swiper-slide">
+						<img src="img/honor5.png" alt="">
+				    </div>
+				     <div class="swiper-slide">
+						<img src="img/honor6.png" alt="">
+				    </div>
+				  </div>
+				</div>
+				<div class="z-prev"><span class="fa fa-caret-left"></span></div>
+				<!-- <div class="swiper-button-prev"><span class="fa fa-caret-left"></span></div> -->
+				<div class="z-next"><span class="fa fa-caret-right"></span></div>
+			</div>
+		</div>
+	</section>
+	<section id="culture">
+		<div class="conbox container">
+			<h2>企业文化</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="iconbox row">
+				<div class="item col-md-3 col-xs-6">
+					<div><img src="img/culture1.png" alt=""></div>
+					<h5>沟通</h5>
+					<p>树立全员沟通理念，营造良好氛围</p>
+				</div>
+				<div class="item col-md-3 col-xs-6">
+					<div><img src="img/culture2.png" alt=""></div>
+					<h5>信任</h5>
+					<p>员工之间相互尊重，与客户形成相互信任关系 </p>
+				</div>
+				<div class="item col-md-3 col-xs-6">
+					<div><img src="img/culture3.png" alt=""></div>
+					<h5>支持</h5>
+					<p>各部门相互支持，完善每一环节工作</p>
+				</div>
+				<div class="item col-md-3 col-xs-6">
+					<div><img src="img/culture4.png" alt=""></div>
+					<h5>目标</h5>
+					<p>坚持使命感，确定公司发展目标 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="service">
+		<div class="container conbox" >
+			<h2>留学服务产品</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="txtbox">
+				<div class="txt-title">精细化产品，离dream offer更近一步。</div>
+			</div>
+			<div class="itembox clearfix">
+				<div class="item">
+					<div class="boxs">
+						<div class="img">
+							<img src="img/service1.jpg" alt="">
+						</div>
+						<div class="desc">
+							<p><span>英国</span>留学申请</p>
+							<div class="obj_item">目标国家：英国</div>
+							<div class="obj_item">申请项目：本科/硕士</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="boxs">
+						<div class="img">
+							<img src="img/service2.jpg" alt="">
+						</div>
+						<div class="desc">
+							<p><span>美国</span>留学申请</p>
+							<div class="obj_item">目标国家：美国</div>
+							<div class="obj_item">申请项目：本科/硕士</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="boxs">
+						<div class="img">
+							<img src="img/service3.jpg" alt="">
+						</div>
+						<div class="desc">
+							<p><span>加拿大</span>留学申请</p>
+							<div class="obj_item">目标国家：加拿大</div>
+							<div class="obj_item">申请项目：本科/硕士</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="boxs">
+						<div class="img">
+							<img src="img/service4.jpg" alt="">
+						</div>
+						<div class="desc">
+							<p><span>澳洲</span>留学申请</p>
+							<div class="obj_item">目标国家：澳大利亚或新西兰</div>
+							<div class="obj_item">申请项目：本科/硕士</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="boxs">
+						<div class="img">
+							<img src="img/service5.jpg" alt="">
+						</div>
+						<div class="desc">
+							<p><span>中国香港</span>留学申请</p>
+							<div class="obj_item">目标国家：中国香港</div>
+							<div class="obj_item">申请项目：本科/硕士</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section id="small_overseas">
+		<div class="container conbox" >
+			<h2>微留学体验</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="overseas-item row">
+				<div class="over_item col-xs-6 col-sm-4">
+					<div class="overbox">
+						<h5>密集课程</h5>
+						<p>每周30小时的全真课程</p>
+					</div>
+				</div>
+				<div class="over_item col-xs-6 col-sm-4">
+					<div class="overbox">
+						<h5>封闭住宿</h5>
+						<p>配备校内封闭式住宿</p>
+					</div>
+				</div>
+				<div class="over_item col-xs-6 col-sm-4">
+					<div class="overbox">
+						<h5>安全保障</h5>
+						<p>17岁以下接受陪同家长</p>
+					</div>
+				</div>
+				<div class="over_item col-xs-6 col-sm-4">
+					<div class="overbox">
+						<h5>贵族活动</h5>
+						<p>高端课程等趣味活动</p>
+					</div>
+				</div>
+				<div class="over_item col-xs-6 col-sm-4">
+					<div class="overbox">
+						<h5>全程陪护</h5>
+						<p>周末团队出游</p>
+					</div>
+				</div>
+				<div class="over_item col-xs-6 col-sm-4">
+					<div class="overbox">
+						<h5>价格优惠</h5>
+						<p>边学边玩</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="major">
+		<div class="container conbox" >
+			<h2>专业服务</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="txtbox">
+				<div class="txt-title">全程透明，环环相扣，全方位一站式服务。</div>
+			</div>
+			<div class="major_box clearfix">
+				<div class="items">
+					<div class="icon"><img src="img/major1.png" alt=""></div>
+					<h3>咨询签约</h3>
+					<ul>
+						<li>签约缴纳服务费</li>
+						<li>顾问推荐留学方案</li>
+						<li>客户准备申请资料</li>
+					</ul>
+				</div>
+				<div class="items">
+					<div class="icon"><img src="img/major2.png" alt=""></div>
+					<h3>语言提升</h3>
+					<ul>
+						<li>制定学习时间规划</li>
+						<li>提高语言成绩</li>
+						<li>增大录取机率</li>
+					</ul>
+				</div>
+				<div class="items">
+					<div class="icon"><img src="img/major3.png" alt=""></div>
+					<h3>文书写作</h3>
+					<ul>
+						<li>依据学生情况，制定个性化方案</li>
+						<li>提高背景和语言优势</li>
+					</ul>
+				</div>
+				<div class="items">
+					<div class="icon"><img src="img/major4.png" alt=""></div>
+					<h3>获得录取</h3>
+					<ul>
+						<li>通知客户最新申请进度</li>
+						<li>确认入读院校</li>
+					</ul>
+				</div>
+				<div class="items">
+					<div class="icon"><img src="img/major5.png" alt=""></div>
+					<h3>签证办理</h3>
+					<ul>
+						<li>整理全套签证申请资料</li>
+						<li>签证培训及预约</li>
+						<li>获得签证</li>
+					</ul>
+				</div>
+				<div class="items">
+					<div class="icon"><img src="img/major6.png" alt=""></div>
+					<h3>行前指导</h3>
+					<ul>
+						<li>免费享受行前指导服务</li>
+						<li>提供留学锦囊</li>
+					</ul>
+				</div>
+				<div class="items">
+					<div class="icon"><img src="img/major7.png" alt=""></div>
+					<h3>海外服务</h3>
+					<ul>
+						<li>跟进学习与生活情况</li>
+						<li>协助办理转学、升学、续签等手续</li>
+					</ul>
+				</div>
+				<div class="bottomdesc">
+					专心 • 细心 • 专业 • 满意
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="plan">
+		<div class="container conbox" >
+			<h2>提前规划</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="txtbox">
+				<div class="txt-title">提前准备，蓄势待发，留学更简单。</div>
+			</div>
+			<div class="plan_con">
+				<div class="pcon-left">
+					<ul>
+						<li class="active">高升本 <span class="fa fa-caret-right"></span></li>
+						<li>本升硕 <span class="fa fa-caret-right"></span></li>
+					</ul>
+				</div>
+				<div class="pcon-right right0 active">
+					<div class="pitem">
+						<p>高二下学期</p>
+						<div class="line"></div>
+						<div class="desc">确认学校，汇总资料</div>
+					</div>
+					<div class="pitem">
+						<p>高二暑假</p>
+						<div class="line"></div>
+						<div class="desc">准备考试，修改文书，完善简历</div>
+					</div>
+					<div class="pitem">
+						<p>高三上学期</p>
+						<div class="line"></div>
+						<div class="desc">网上申请，提交资料，补齐成绩单</div>
+					</div>
+					<div class="pitem">
+						<p>高三下学期</p>
+						<div class="line"></div>
+						<div class="desc">发出结果，缴纳押金，确认学校</div>
+					</div>
+					<div class="pitem">
+						<p>高三毕业</p>
+						<div class="line"></div>
+						<div class="desc">准备签证，完善材料，成功留学</div>
+					</div>
+				</div>
+				<div class="pcon-right right1">
+					<div class="pitem">
+						<p>大三下学期</p>
+						<div class="line"></div>
+						<div class="desc">确认学校，提供相关文件</div>
+					</div>
+					<div class="pitem">
+						<p>大三暑假</p>
+						<div class="line"></div>
+						<div class="desc">准备相关考试，丰富个人简历</div>
+					</div>
+					<div class="pitem">
+						<p>大四上学期</p>
+						<div class="line"></div>
+						<div class="desc">网上填表，收集资料，提交申请</div>
+					</div>
+					<div class="pitem">
+						<p>大四下学期</p>
+						<div class="line"></div>
+						<div class="desc">发出结果，缴纳押金，确认学校</div>
+					</div>
+					<div class="pitem">
+						<p>大四毕业</p>
+						<div class="line"></div>
+						<div class="desc">准备签证，完善材料，成功留学</div>
+					</div>
+				</div>
+				<div class="time">
+					<img src="img/time.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="success">
+		<div class="container conbox" >
+			<h2>成功案例</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="txtbox">
+				<div class="txt-title">用成绩说话，实力证明一切。</div>
+			</div>
+			<div class="success_item clearfix">
+				<div class="s_img"><img src="img/success1.png" alt=""></div>
+				<div class="s_img"><img src="img/success2.png" alt=""></div>
+				<div class="s_img"><img src="img/success3.png" alt=""></div>
+				<div class="s_img"><img src="img/success4.png" alt=""></div>
+				<div class="s_img"><img src="img/success5.png" alt=""></div>
+				<div class="s_img"><img src="img/success6.png" alt=""></div>
+				<div class="s_img"><img src="img/success7.png" alt=""></div>
+				<div class="s_img"><img src="img/success8.png" alt=""></div>
+				<div class="s_img"><img src="img/success9.png" alt=""></div>
+				<div class="s_img"><img src="img/success10.png" alt=""></div>
+			</div>
+		</div>
+	</section>
+	<section id="team">
+		<div class="container conbox" >
+			<h2>名师团队</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="txtbox">
+				<div class="txt-title">海归团队，经验丰富，助力海外留学。</div>
+			</div>
+			<div class="banner">
+				<div id="certify">
+					<div class="swiper-container swipercon2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="img-box"><img src="img/Eva Chan.jpg" alt=""></div>
+									<div class="zh-name"><span>Eva Chan</span></div>
+									<div class="city">雅思 GMAT名师</div>
+									<div class="contact">
+										<p>香港科技大学硕士，英语翻译学士，曾就任于香港中华总商会(CGCC)。</p>
+										<p>主攻雅思写作，具备丰富的高端文书撰写和院校申请经验。</p>
+										<p><button type="button">咨询</button></p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="img-box"><img src="img/Bill Ng.jpg" alt=""></div>
+									<div class="zh-name"><span>Bill Ng</span></div>
+									<div class="city">雅思  SAT  ACT名师</div>
+									<div class="contact">
+										<p>雅思总分8分，阅读满分，教学风格幽默风趣。</p>
+										<p>主攻阅读、写作及SAT/ACT，十年以上留学课程教学经验。</p>
+										<p><button type="button">咨询</button></p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="img-box"><img src="img/Alex Wong.jpg" alt=""></div>
+									<div class="zh-name"><span>Alex Wong</span></div>
+									<div class="city">雅思  剑桥英语名师</div>
+									<div class="contact">
+										<p>主攻雅思口语、剑桥英语教学。</p>
+										<p>强调口语“情景剧学习法”，注重和学生的交流沟通。</p>
+										<p><button type="button">咨询</button></p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="img-box"><img src="img/Winnie Liu.jpg" alt=""></div>
+									<div class="zh-name"><span>Winnie Liu</span></div>
+									<div class="city">雅思 剑桥英语名师</div>
+									<div class="contact">
+										<p>澳洲新南威尔士大学英汉翻译硕士，并获得澳洲NAATI翻译认证资格。</p>
+										<p>主攻雅思听力，深谙各国院校信息、申请流程等留学程序。</p>
+										<p><button type="button">咨询</button></p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="img-box"><img src="img/Grace H.jpg" alt=""></div>
+									<div class="zh-name"><span>Grace Huang</span></div>
+									<div class="city">雅思 托福名师</div>
+									<div class="contact">
+										<p>雅思听力9分达人。主攻口语、听力教研教学，十二年教学经验。</p>
+										<p>教出数十位雅思单项8.5分，托福单单项28分以上的学员。</p>
+										<p><button type="button">咨询</button></p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="img-box"><img src="img/Miya Lo.jpg" alt=""></div>
+									<div class="zh-name"><span>Maya Lo</span></div>
+									<div class="city">剑桥英语  AEAS 名师 </div>
+									<div class="contact">
+										<p>中山大学硕士，多年初高中教学辅导经验。</p>
+										<p>主攻海外学术课程的数学、化学、生物等科目。</p>
+										<p><button type="button">咨询</button></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="photoWall">
+		<div class="container conbox" >
+			<h2>精彩活动</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="txtbox">
+				<div class="txt-title">线下讲座，分享专业知识，规划留学生活。</div>
+			</div>
+		</div>
+		<div class="photo_wall">
+			<div class="cen1 clearfix">
+				<div><img src="img/photo1.jpg" alt=""></div>
+				<div><img src="img/photo2.jpg" alt=""></div>
+				<div><img src="img/photo3.jpg" alt=""></div>
+				<div><img src="img/photo4.jpg" alt=""></div>
+			</div>
+			<div class="cen2 clearfix">
+				<div><img src="img/photo5.jpg" alt=""></div>
+				<div><img src="img/photo6.jpg" alt=""></div>
+				<div><img src="img/photo7.jpg" alt=""></div>
+			</div>
+		</div>
+	</section>
+	<section id="partner">
+		<div class="container conbox" >
+			<h2>合作院校</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="txtbox">
+				<div class="txt-title">全球众多名校，强强联手，保证质量。</div>
+			</div>
+			<div class="partnerlist clearfix">
+				<div>
+					<img src="img/partner1.png" alt="">
+					<p>迈阿密大学</p>
+				</div>
+				<div>
+					<img src="img/partner2.png" alt="">
+					<p>北卡罗来纳大学</p>
+				</div>
+				<div>
+					<img src="img/partner3.png" alt="">
+					<p>美利坚大学</p>
+				</div>
+				<div>
+					<img src="img/partner4.png" alt="">
+					<p>新罕布什尔大学</p>
+				</div>
+				<div>
+					<img src="img/partner5.png" alt="">
+					<p>塔尔萨大学</p>
+				</div>
+				<div>
+					<img src="img/partner6.png" alt="">
+					<p>伦敦大学</p>
+				</div>
+				<div>
+					<img src="img/partner7.png" alt="">
+					<p>曼彻斯特大学</p>
+				</div>
+				<div>
+					<img src="img/partner8.png" alt="">
+					<p>利物浦大学</p>
+				</div>
+				<div>
+					<img src="img/partner9.png" alt="">
+					<p>雷丁大学</p>
+				</div>
+				<div>
+					<img src="img/partner10.png" alt="">
+					<p>杜伦大学</p>
+				</div>
+				<div>
+					<img src="img/partner11.png" alt="">
+					<p>悉尼大学</p>
+				</div>
+				<div>
+					<img src="img/partner12.png" alt="">
+					<p>澳洲国立大学</p>
+				</div>
+				<div>
+					<img src="img/partner13.png" alt="">
+					<p>阿德莱德大学</p>
+				</div>
+				<div>
+					<img src="img/partner14.png" alt="">
+					<p>惠灵顿维多利亚大学</p>
+				</div>
+				<div>
+					<img src="img/partner15.png" alt="">
+					<p>西蒙弗雷泽大学</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer>
+	<div class="container clearfix" id="footbox">
+		<div class="f-desc">
+			<div class="item">
+				<h6>全国分校</h6>
+				<div class="con">
+					<span>广州总部</span>
+					<span>广州越秀分部</span>
+					<span>中山</span>
+					<span>佛山</span>
+					<span>惠州</span>
+				</div>
+			</div>
+			<div class="item">
+				<h6>欢迎来访</h6>
+				<div class="con2">
+					<p><span>广州总部：</span>广东省广州市天河区五山路一号华晟大厦10楼01单元</p>
+					<p><span>广州越秀分部：</span>广州市越秀区环市东路371号世贸中心南塔1811室</p>
+					<p><span>中山：</span>广东省惠州市惠城区惠沙堤一路水印尚堤大厦3楼309</p>
+					<p><span>佛山：</span>广东省佛山市禅城区祖庙路33号百花广场16楼10-11室</p>
+					<p><span>惠州：</span>广东省中山市东区夏洋街54号1层</p>
+				</div>
+			</div>
+			<div class="item">
+				<h6>办公时间</h6>
+				<div class="con">
+					<p>星期一至星期日 上午9：30-下午6：30</p>
+				</div>
+			</div>
+		</div>
+		<div class="f-code">
+			<h6>关注一盟教育</h6>
+			<div class="f-img clearfix">
+				<div><img src="img/wechatcode.png" alt=""><p>官方微信</p></div>
+				<div><img src="img/weibocode.png" alt=""><p>官方微博</p></div>
+			</div>
+			<div class="phonebox">
+				<img src="img/phoneimg.png" alt="">
+			</div>
+		</div>
+
+	</div>
+</footer>
+</body>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</html>
