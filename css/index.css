@@ -103,10 +103,10 @@
 }*/
 .conbox .iconbox .item{
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 .conbox .iconbox .item img{
-	max-width: 100px;
+	max-width: 150px;
 }
 .conbox .iconbox .item p{
 	color: #727171;
@@ -121,15 +121,14 @@
 	color: #fff;
 	text-align: center;
 	background-color: #f39800;
-	font-size: 20px;
-	margin-top: 5rem;
+	font-size: 30px;
+	word-spacing: 15px;
 }
 /*发展历程*/
 #develop{
 	min-height: 200px;
 	background-image: url("../img/develop_bg.jpg");
 	background-size: 100%;
-	padding:20px 0;
 }
 .itembox .item{
 	width: 20%;
@@ -139,20 +138,35 @@
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
+	margin-top: 20px;
+}
+#develop .itembox{
+	margin-bottom: 20px;
+}
+#develop .itembox .item{
+	position: relative;
+	margin:100px 0;
 }
 #develop .itembox .item>div{
 	vertical-align: bottom;
-	height: 50px;
-	width: 90%;
+	width: 80%;
 }
 #develop .itembox .item .num{
 	font-size: 34px;
-    color: #f39800;
+    color: #727171;
     font-weight: bold;
+    position: absolute;
+    top:-50px;
+    left:50%;
+    transform: translateX(-50%);
+}
+#develop .itembox .item:nth-child(2n) .num{
+	top:50px;
+	color: #f39800;
 }
 #develop .itembox .item .line{
 	height: 15px;
-	width: 90%;
+	width: 100%;
 	background-color: #727171;
 	margin:10px 0;
 	position: relative;
@@ -174,37 +188,48 @@
 	transform: rotate(45deg);
 	background-color: #727171;
 	position: absolute;
-	top:-8px;
+	top:3px;
 	left:50%;
 	margin-left: -10px;
 	z-index: 1
 }
 #develop .itembox .item .desc{
-	font-size: 12px;
+	font-size: 16px;
 	padding:0 20px;
+	color: #727171;
+	position: absolute;
+	height: 110px;
+	top:-50px;
+	left:50%;
+    transform: translate(-50%,100%);
+}
+#develop .itembox .item:nth-child(2n) .desc{
+	top:-200px;
 }
 #develop .itembox .item:nth-child(2n) .line{
 	background-color: #f39800;
 }
 #develop .itembox .item:nth-child(2n) .line:after{
 	background-color: #f39800;
-	top:3px;
+	top:-8px;
 }
 /*企业荣誉*/
 #honor{
 	background-color: #f39800;
-	padding:20px 0;
 }
-#honor .conbox h2,#success .conbox h2{
+#honor .conbox{
+	margin-bottom: 10px;
+}
+#honor .conbox h2,#success .conbox h2,#team .conbox h2{
 	color: #fff;
 }
-#honor .conbox p.icon,#success .conbox p.icon{
+#honor .conbox p.icon,#success .conbox p.icon,#team .conbox p.icon{
 	width: 100%;
 	font-size: 12px;
 	color: #fff;
 	text-align: center;
 }
-#honor .conbox p.icon span,#success .conbox p.icon span{
+#honor .conbox p.icon span,#success .conbox p.icon span,#team .conbox p.icon span{
 	display: inline-block;
 	width: 5px;
 	height: 5px;
@@ -242,29 +267,28 @@
 }
 
 /*企业文化*/
-#culture{
-	margin-bottom: 30px;
-}
 #culture .conbox .iconbox .item h5{
-	font-size: 26px;
+	font-size: 30px;
 	font-weight:bold;
+	margin-top: 15px;
 }
 #culture .conbox .iconbox .item p{
-	font-size: 12px;
 	color: #727171;
-	max-width: 130px;
+	max-width: 150px;
 	text-align: center;
 	margin:0 auto;
+	font-size: 18px;
 }
 /*留学服务产品*/
 #service{
 	background-image: url("../img/servicebg.jpg");
 	background-size: 100% auto; 
-	margin:15px auto;
+	margin:0px auto;
 }
 #service .item{
 	padding:10px;
 	box-sizing: border-box;
+	cursor: pointer;
 }
 #service .item .boxs{
 	border-radius: 5px;
@@ -284,17 +308,25 @@
 #service .item .desc p>span{
 	color: #f39800;
 }
+#service .item .obj_button{
+	display: none;
+}
+#service .item .obj_button button{
+	background-color: #f39800;
+	color: #fff;
+	
+}
 /*微留学体验*/
 #small_overseas{
 	background: url("../img/overseasbg.png") no-repeat;
 	background-size: 100%; 
-	margin:15px auto;
+	margin:0px auto;
 }
 #small_overseas .over_item{
 	padding:10px;
 }
 #small_overseas .overbox{
-	max-width: 224px;
+	max-width: 300px;
 	background-color: rgba(255,255,255,.6);
 	text-align: center;
 	padding:20px 0;
@@ -302,39 +334,49 @@
 	color: #727171;
 }
 #small_overseas .overbox h5{
-	font-size: 26px;
+	font-size: 30px;
 	font-weight: bold;
 }
 #small_overseas .overbox p{
-	font-size: 14px;
+	font-size: 18px;
 }
 /*专业服务*/
 #major{
 	 padding-bottom: 35px;
 }
 #major .major_box{
-	height: 200px;
+	height: 230px;
 	padding:0 10px;
 	background-color: #fff;
 	border:1px dashed #727171;
 	border-radius: 10px;
 	margin:0 auto;
-	margin-top: 50px;
+	margin-top: 66px;
 	position: relative;
+	margin-bottom: 50px;
 }
 #major .major_box .items{
 	width: 14.28%;
 	float: left;
-	margin-top: -30px;
+	margin-top: -51px;
 	text-align: center;
 }
 #major .major_box .items .icon,#major .major_box .items h3,#major .major_box .items ul{
 	background-color: #fff;
 }
 #major .major_box .items .icon{
-	width: 50%;
+	width: 68%;
 	margin:0 auto;
+	position: relative;
 }
+#major .major_box .items .icon span.fa{
+	position: absolute;
+    left: 2px;
+    top: 42px;
+    color: #727171;
+    font-size: 18px;
+}
+
 #major .major_box .items .icon img{
 	width: 100%;
 }
@@ -345,40 +387,46 @@
 }
 #major .major_box .items ul li{
 	margin-bottom: 5px;
-	font-size: 12px;
+	font-size: 14px;
 	color: #727171;
-	width: 80%;
+	width: 90%;
 	margin:0 auto;
 }
 #major .major_box .bottomdesc{
-	width: 60%;
-	min-width: 200px;
+	width: 600px;
 	display: inline-block;
 	position: absolute;
 	left:50%;
-	bottom:-20px;
-	background-color: #fff;
-	padding:10px;
-	border:1px solid #f39800;
+	bottom:-19px;
 	transform: translateX(-50%);
-	color: #000
-	font-size:26px;
-	font-weight: bold;
 	text-align: center;
+	background-color: #fff;
+	padding:0 10px;
+}
+#major .major_box .bottomdesc img{
+	width: 100%;
+}
+#major .major_box .bottomdesc span.fa{
+	position: absolute;
+	right:-1px;
+	color: #727171;
+    font-size: 18px;
+    top:9px;
 }
 /*提前规划*/
 #plan{
-	padding:10px;
 	background-color: #efefef;
-	
 }
 .plan_con{
 	background-color: #f39800;
-	border-radius: 5px;
-	padding:10px;
-	display: flex;
-	position: relative;
-	margin-bottom: 50px;
+    border-radius: 35px;
+    padding: 5px 35px;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 850px;
+    padding-right: 5px;
 }
 .plan_con .pcon-left{
 	color: #fff;
@@ -398,21 +446,23 @@
 .plan_con .pcon-right{
 	background-color: #fff;
 	padding:10px;
-	border-radius: 5px;
 	flex: 1;
 	padding-left: 20px;
 	display: none;
+	padding-right: 35px;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
 }
 .plan_con .pcon-right .pitem{
 	display: flex;
 	align-items: center;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	position: relative;
 	z-index: 3
 }
 .plan_con .pcon-right .pitem>p{
-	color: #000;
-	font-size: 14px;
+	color: #3e3a39;
+	font-size: 18px;
 	position: relative;
 	padding-left: 8px;
 	margin-right: 10px;
@@ -423,7 +473,7 @@
 	display: inline-block;
 	height: 16px;
 	width: 2px;
-	background-color: #000;
+	background-color: #3e3a39;
 	margin-right: 5px;
 	position: absolute;
 	left:0;
@@ -452,7 +502,8 @@
 	display: inline-block;
 	padding:8px;
 	border:1px solid #f39800;
-	border-radius: 5px;
+	border-radius: 16px;
+	font-size: 16px;
 }
 .plan_con div.active{
 	display: block;
@@ -464,7 +515,7 @@
 	z-index: 1;
 }
 #plan .time img{
-	width: 120px;
+	width: 150px;
 }
 /*成功案例*/
 #success{
@@ -479,6 +530,14 @@
 }
 .success_item .s_img img{
 	width: 90%;
+}
+/*名师团队*/
+#team{
+  background: url("../img/teambg.jpg") no-repeat;
+  background-size: 100%; 
+}
+#team .conbox .txtbox .txt-title,#success .conbox .txtbox .txt-title{
+	color: #fff;
 }
 /*精彩活动*/
 #photoWall{

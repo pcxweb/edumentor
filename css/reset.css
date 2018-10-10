@@ -1,4 +1,4 @@
-@charset "utf-8";html{background-color:#fff;color:#000;font-size:12px}
+@charset "utf-8";html{background-color:#fff;color:#3e3a39;font-size:12px}
 body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,figure,form,fieldset,legend,input,textarea,button,p,blockquote,th,td,pre,xmp{margin:0;padding:0}
 body,input,textarea,button,select,pre,xmp,tt,code,kbd,samp{line-height:1.5;font-family:tahoma,arial,"Hiragino Sans GB",simsun,sans-serif}
 h1,h2,h3,h4,h5,h6,small,big,input,textarea,button,select{font-size:100%}
@@ -86,13 +86,16 @@ a {color: #25a4bb;text-decoration: none;}
   }
 }
 section{
-  padding:20px 0;
+  padding:50px 0;
+}
+section p{
+  font-size: 20px;
 }
 
 .navbar-default .navbar-nav>li>a{
   color: #595758;
-  font-size: 16px;
-  padding:2px 1px;
+  font-size: 18px;
+  padding:2px 3px;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -164,7 +167,7 @@ section{
 /*内容标题部分*/
 .conbox h2{
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   color: #727171;
   font-weight: bold;
 }
@@ -185,16 +188,17 @@ section{
 }
 .conbox .txtbox .txt-title{
   font-weight: bold;
-  font-size: 20px;
+  font-size: 28px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 /*底部*/
 footer{
   background-color: #3e3a39;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   padding:20px 0;
 }
 #footbox h6{

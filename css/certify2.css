@@ -14,7 +14,7 @@
 
 #certify  .swiper-slide {
 	width: 300px;
-	height: 380px;
+	height: 460px;
 	background: #fff;
 	box-shadow: 0 8px 30px #ddd;
 	border:1px solid #ddd;
@@ -92,16 +92,17 @@
 	font-size: 20px;
 	color: #3e3a38;
 	font-weight: bold;
+	font-size: 25px;
 }
 .item .zh-name span{
 	display: inline-block;
-	padding-bottom: 5px;
-	margin-bottom: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
 	border-bottom: 2px solid #3e3a38;
 }
 .item  .city{
 	margin: 0 auto;
-	font-size: 16px;
+	font-size: 20px;
 	margin-top: 5px;
 	color: #f39800;
 	font-weight: bold;
@@ -113,6 +114,9 @@
 	text-align: center;
 	color: #727171;
 	margin: 10px auto;
+}
+.item  .contact p{
+	font-size: 16px;
 }
 .item  .contact button{
 	max-width: 200px;
