@@ -1,0 +1,238 @@
+@charset "utf-8";html{background-color:#fff;color:#000;font-size:12px}
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,figure,form,fieldset,legend,input,textarea,button,p,blockquote,th,td,pre,xmp{margin:0;padding:0}
+body,input,textarea,button,select,pre,xmp,tt,code,kbd,samp{line-height:1.5;font-family:tahoma,arial,"Hiragino Sans GB",simsun,sans-serif}
+h1,h2,h3,h4,h5,h6,small,big,input,textarea,button,select{font-size:100%}
+h1,h2,h3,h4,h5,h6{font-family:tahoma,arial,"Hiragino Sans GB","微软雅黑",simsun,sans-serif}
+h1,h2,h3,h4,h5,h6,b,strong{font-weight:normal}
+address,cite,dfn,em,i,optgroup,var{font-style:normal}
+table{border-collapse:collapse;border-spacing:0;text-align:left}
+caption,th{text-align:inherit}
+ul,ol,menu{list-style:none}
+fieldset,img{border:0}
+img,object,input,textarea,button,select{vertical-align:middle}
+article,aside,footer,header,section,nav,figure,figcaption,hgroup,details,menu{display:block}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+blockquote:before,blockquote:after,q:before,q:after{content:"\0020"}
+textarea{overflow:auto;resize:vertical}
+input,textarea,button,select,a{outline:0 none;border: none;}
+button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}
+mark{background-color:transparent}
+a,ins,s,u,del{text-decoration:none}
+sup,sub{vertical-align:baseline}
+html {overflow-x: hidden;height: 100%;-webkit-tap-highlight-color: transparent;}
+body {min-width:1190px !important;background-color: #f8f8f8;font-family: Arial, "Microsoft Yahei", "Helvetica Neue", Helvetica, sans-serif;color: #727171;line-height: 1;-webkit-text-size-adjust: none;}
+hr {height: .02rem;margin: .1rem 0;border: medium none;border-top: .02rem solid #cacaca;}
+a {color: #25a4bb;text-decoration: none;}
+
+.ellipsis2 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+@font-face {
+  font-family: 'enfonts';
+  src: url('../fonts/Dancing Script.eot');
+  src: url('../fonts/Dancing Script.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Dancing Script.woff') format('woff'),
+   		url('../fonts/Dancing Script.ttf') format('truetype'),
+   		url('../fonts/Dancing Script.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+#nav{
+  border-radius: 0px;
+  border:0;
+  color: #595758;
+  margin-bottom: 0px;
+}
+#nav .navbar-brand{
+  height: auto
+}
+#nav .navbar-brand img{
+  height: 50px;
+}
+/*导航样式*/
+#nav .dropdown-menu{
+  border-radius: 0px;
+  padding:0;
+  min-width: 88px;
+  text-align: center;
+  top:75%;
+}
+#nav .dropdown-menu li{
+  border-bottom: 1px solid #eee;
+}
+#nav .dropdown-menu li a{
+  color: #f39800;
+}
+#nav .dropdown-menu li:last-child{
+   border-bottom:none;
+}
+
+@media (min-width: 768px){
+  .navbar-default .navbar-nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-default .navbar-nav>li{
+    margin:0 15px;
+    line-height: 60px;
+    text-align: center;
+  }
+}
+section{
+  padding:20px 0;
+}
+
+.navbar-default .navbar-nav>li>a{
+  color: #595758;
+  font-size: 16px;
+  padding:2px 1px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.navbar-default .navbar-nav>li>a:after{
+  transition: all 0.5s;
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #f39800;
+  position: absolute;
+  bottom: -1px;
+  bottom: -1px;
+  left:-100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.navbar-default .navbar-nav>li.actives>a:after,.navbar-default .navbar-nav>li:hover>a:after{
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #f39800;
+  position: absolute;
+  bottom: -1px;
+  left:0;
+  opacity: 1
+}
+#navlist .navbar-form .form-group{
+  position: relative;
+  margin-right: 10px;
+}
+#navlist .navbar-form .form-group span{
+  position: absolute;
+  left:5px;
+  top:50%;
+  transform: translateY(-50%);
+  color: #cacaca;
+  margin-left: 2px;
+}
+#navlist .navbar-form{
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+#navlist .navbar-form .form-group input{
+  border-radius: 16px;
+  background-color: #f2f2f2;
+  color: #cacaca;
+  padding:3px 12px;
+  padding-left: 23px;
+  border:0;
+  height: 30px;
+  box-shadow: none
+}
+#navlist .navbar-form button{
+  border-radius: 16px;
+  border-color:#f8b62c;
+  color: #f8b62c;
+  padding:3px 12px;
+
+}
+#navlist .navbar-form button:hover{
+  color: #fff;
+  background-color: #f8b62c
+}
+
+/*内容标题部分*/
+.conbox h2{
+  text-align: center;
+  font-size: 25px;
+  color: #727171;
+  font-weight: bold;
+}
+.conbox p.icon{
+  width: 100%;
+  font-size: 12px;
+  color: #f39800;
+  text-align: center;
+
+}
+.conbox p.icon span{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #f39800;
+  border-radius: 100%;
+  margin:0 3px;
+}
+.conbox .txtbox .txt-title{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*底部*/
+footer{
+  background-color: #3e3a39;
+  color: #fff;
+  font-size: 12px;
+  padding:20px 0;
+}
+#footbox h6{
+  font-size: 16px;
+  font-weight: bold;
+}
+#footbox>div{
+  float: left;
+  width: 50%;
+}
+
+#footbox .f-desc .con span{
+  margin-right: 10px;
+}
+#footbox .f-desc .item{
+  margin-bottom: 20px;
+}
+#footbox .f-code .f-img{
+  margin-top: 20px;
+}
+#footbox .f-code .f-img>div{
+  float: left;
+  text-align: center;
+
+}
+#footbox .f-code .f-img>div:nth-child(1){
+  margin-right: 50px;
+}
+#footbox .f-code img{
+  width: 90px;
+  height: auto;
+}
+#footbox .f-code p{
+  margin-top: 10px;
+}
+#footbox .f-code .phonebox{
+  margin-top: 20px;
+}
+#footbox .f-code .phonebox img{
+  width: 60%;
+}

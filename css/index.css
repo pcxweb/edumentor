@@ -1,0 +1,518 @@
+
+/*banner*/
+#banner{
+	position: relative;
+}
+#banner img{
+	width: 100%;
+	height: auto
+}
+#banner .contactForm{
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+	bottom:10px;
+	width: 280px;
+	background-color: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	display: none;
+}
+#banner .contactForm .title{
+	color: #fff;
+	background-color: #f8b62c;
+	text-align: center;
+	padding:10px 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+#banner .contactForm .base{
+	display: flex;
+	justify-content: space-between;
+	margin:10px 0;
+	padding:0 15px;
+	margin-bottom: 20px;
+}
+#banner .contactForm .base input{
+	border-bottom: 1px solid #ccc;
+	width: 110px;
+}
+#banner .contactForm .choosebox{
+	display: flex;
+	flex-direction: column;
+	padding:0 15px;
+}
+#banner .contactForm .choosebox .item{
+	border:1px solid #ccc;
+	margin-bottom: 20px;
+	padding:5px;
+}
+#banner .contactForm .choosebox .item select,.choosebox .item input{
+	width: 100%
+}
+#banner .contactForm .btn_box{
+	padding:0 15px;
+
+}
+#banner .contactForm .btn_box button{
+	width: 100%;
+	padding:5px 0;
+	margin-bottom: 15px;
+}
+#banner .contactForm .btn_box #subbtn{
+	background-color: #fbb03b;
+	color: #fff;
+	border:1px solid #faa31a;
+	border-radius:10px;
+}
+#banner .contactForm .btn_box #cancelbtn{
+	background-color: transparent;
+	color: #cacaca;
+}
+/*内容部分*/
+/*.conbox h2{
+	text-align: center;
+	font-size: 25px;
+	color: #727171;
+	font-weight: bold;
+}
+.conbox p.icon{
+	width: 100%;
+	font-size: 12px;
+	color: #f39800;
+	text-align: center;
+
+}
+.conbox p.icon span{
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background-color: #f39800;
+	border-radius: 100%;
+	margin:0 3px;
+}
+.conbox .txtbox .txt-title{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.conbox .txtbox p{
+	font-size: 12px;
+	color: #727171;
+}*/
+.conbox .iconbox .item{
+	text-align: center;
+	margin-top: 10px;
+}
+.conbox .iconbox .item img{
+	max-width: 100px;
+}
+.conbox .iconbox .item p{
+	color: #727171;
+	font-weight: bold;
+}
+.enfonts{
+	font-family: "enfonts"
+}
+.en_nav{
+	padding: 5px;
+	text-align: center;
+	color: #fff;
+	text-align: center;
+	background-color: #f39800;
+	font-size: 20px;
+	margin-top: 5rem;
+}
+/*发展历程*/
+#develop{
+	min-height: 200px;
+	background-image: url("../img/develop_bg.jpg");
+	background-size: 100%;
+	padding:20px 0;
+}
+.itembox .item{
+	width: 20%;
+	float: left;
+	text-align: center;
+	padding:10px 5px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+#develop .itembox .item>div{
+	vertical-align: bottom;
+	height: 50px;
+	width: 90%;
+}
+#develop .itembox .item .num{
+	font-size: 34px;
+    color: #f39800;
+    font-weight: bold;
+}
+#develop .itembox .item .line{
+	height: 15px;
+	width: 90%;
+	background-color: #727171;
+	margin:10px 0;
+	position: relative;
+	z-index: 9;
+}
+#develop .itembox .item:first-child .line{
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+#develop .itembox .item:last-child .line{
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+#develop .itembox .item .line:after{
+	content: "";
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	transform: rotate(45deg);
+	background-color: #727171;
+	position: absolute;
+	top:-8px;
+	left:50%;
+	margin-left: -10px;
+	z-index: 1
+}
+#develop .itembox .item .desc{
+	font-size: 12px;
+	padding:0 20px;
+}
+#develop .itembox .item:nth-child(2n) .line{
+	background-color: #f39800;
+}
+#develop .itembox .item:nth-child(2n) .line:after{
+	background-color: #f39800;
+	top:3px;
+}
+/*企业荣誉*/
+#honor{
+	background-color: #f39800;
+	padding:20px 0;
+}
+#honor .conbox h2,#success .conbox h2{
+	color: #fff;
+}
+#honor .conbox p.icon,#success .conbox p.icon{
+	width: 100%;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+}
+#honor .conbox p.icon span,#success .conbox p.icon span{
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background-color: #fff;
+	border-radius: 100%;
+	margin:0 3px;
+}
+#honor .banner{
+	width: 100%;
+	position: relative;
+}
+#honor .swiper-container{
+	width: 90%;
+}
+#honor .swiper-slide{
+	border-radius: 4px;
+	text-align: center;
+}
+#honor .swiper-slide img{
+	width: 90%;
+}
+#honor .z-prev,#honor .z-next{
+	position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    font-size: 60px;
+    color: #fff;
+    z-index: 10;
+}
+#honor .z-prev{
+	left:0px;
+}
+#honor .z-next{
+	right:0px;
+}
+
+/*企业文化*/
+#culture{
+	margin-bottom: 30px;
+}
+#culture .conbox .iconbox .item h5{
+	font-size: 26px;
+	font-weight:bold;
+}
+#culture .conbox .iconbox .item p{
+	font-size: 12px;
+	color: #727171;
+	max-width: 130px;
+	text-align: center;
+	margin:0 auto;
+}
+/*留学服务产品*/
+#service{
+	background-image: url("../img/servicebg.jpg");
+	background-size: 100% auto; 
+	margin:15px auto;
+}
+#service .item{
+	padding:10px;
+	box-sizing: border-box;
+}
+#service .item .boxs{
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 0 5px #ccc;
+	background-color: #fff;
+}
+#service .item img{
+	width: 100%;
+}
+#service .item .desc{
+	padding:10px
+}
+#service .item .desc p{
+	font-weight: bold;
+}
+#service .item .desc p>span{
+	color: #f39800;
+}
+/*微留学体验*/
+#small_overseas{
+	background: url("../img/overseasbg.png") no-repeat;
+	background-size: 100%; 
+	margin:15px auto;
+}
+#small_overseas .over_item{
+	padding:10px;
+}
+#small_overseas .overbox{
+	max-width: 224px;
+	background-color: rgba(255,255,255,.6);
+	text-align: center;
+	padding:20px 0;
+	margin:0 auto;
+	color: #727171;
+}
+#small_overseas .overbox h5{
+	font-size: 26px;
+	font-weight: bold;
+}
+#small_overseas .overbox p{
+	font-size: 14px;
+}
+/*专业服务*/
+#major{
+	 padding-bottom: 35px;
+}
+#major .major_box{
+	height: 200px;
+	padding:0 10px;
+	background-color: #fff;
+	border:1px dashed #727171;
+	border-radius: 10px;
+	margin:0 auto;
+	margin-top: 50px;
+	position: relative;
+}
+#major .major_box .items{
+	width: 14.28%;
+	float: left;
+	margin-top: -30px;
+	text-align: center;
+}
+#major .major_box .items .icon,#major .major_box .items h3,#major .major_box .items ul{
+	background-color: #fff;
+}
+#major .major_box .items .icon{
+	width: 50%;
+	margin:0 auto;
+}
+#major .major_box .items .icon img{
+	width: 100%;
+}
+#major .major_box .items h3{
+	margin-top: 10px;
+	font-weight: bold;
+	color: #727171;
+}
+#major .major_box .items ul li{
+	margin-bottom: 5px;
+	font-size: 12px;
+	color: #727171;
+	width: 80%;
+	margin:0 auto;
+}
+#major .major_box .bottomdesc{
+	width: 60%;
+	min-width: 200px;
+	display: inline-block;
+	position: absolute;
+	left:50%;
+	bottom:-20px;
+	background-color: #fff;
+	padding:10px;
+	border:1px solid #f39800;
+	transform: translateX(-50%);
+	color: #000
+	font-size:26px;
+	font-weight: bold;
+	text-align: center;
+}
+/*提前规划*/
+#plan{
+	padding:10px;
+	background-color: #efefef;
+	
+}
+.plan_con{
+	background-color: #f39800;
+	border-radius: 5px;
+	padding:10px;
+	display: flex;
+	position: relative;
+	margin-bottom: 50px;
+}
+.plan_con .pcon-left{
+	color: #fff;
+	font-size:26px; 
+	font-weight: bold;
+	margin:20px;
+	padding:0 15px;
+}
+.plan_con .pcon-left li{
+	margin-bottom: 8px;
+	cursor: pointer;
+}
+.plan_con .pcon-left li.active{
+	font-size: 30px;
+	border-bottom: 2px solid #fff;
+}
+.plan_con .pcon-right{
+	background-color: #fff;
+	padding:10px;
+	border-radius: 5px;
+	flex: 1;
+	padding-left: 20px;
+	display: none;
+}
+.plan_con .pcon-right .pitem{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	position: relative;
+	z-index: 3
+}
+.plan_con .pcon-right .pitem>p{
+	color: #000;
+	font-size: 14px;
+	position: relative;
+	padding-left: 8px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+}
+.plan_con .pcon-right .pitem>p:before{
+	content: "";
+	display: inline-block;
+	height: 16px;
+	width: 2px;
+	background-color: #000;
+	margin-right: 5px;
+	position: absolute;
+	left:0;
+	top:50%;
+	margin-top: -8px;
+}
+.plan_con .pcon-right .pitem .line{
+	width: 100px;
+	height: 1px;
+	background-color: #f39800;
+	position: relative;
+}
+.plan_con .pcon-right .pitem .line:before{
+	content: "";
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background-color: #f39800;
+	border-radius: 100%;
+	position: absolute;
+	left:0;
+	top:50%;
+	margin-top: -3px;
+}
+.plan_con .pcon-right .pitem .desc{
+	display: inline-block;
+	padding:8px;
+	border:1px solid #f39800;
+	border-radius: 5px;
+}
+.plan_con div.active{
+	display: block;
+}
+#plan .time{
+	position: absolute;
+	right:10px;
+	bottom: 10px;
+	z-index: 1;
+}
+#plan .time img{
+	width: 120px;
+}
+/*成功案例*/
+#success{
+	background: url("../img/successbg.png") no-repeat;
+	background-size: 100%; 
+}
+.success_item .s_img{
+	width: 20%;
+	float: left;
+	text-align: center;
+	margin-top: 20px;
+}
+.success_item .s_img img{
+	width: 90%;
+}
+/*精彩活动*/
+#photoWall{
+	background-color: #efefef;
+
+}
+.photo_wall{
+	width: 100%;
+	padding-bottom: 20px;
+}
+.photo_wall .cen1>div{
+	width: 25%;
+	float: left;
+}
+.photo_wall .cen2>div{
+	width: 33.333%;
+	float: left;
+}
+.photo_wall .cen1 img,.photo_wall .cen2 img{
+	width: 100%;
+}
+/*合作院校*/
+.partnerlist>div{
+	width: 20%;
+	float: left;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.partnerlist>div img{
+	width: 80%;
+}
+.partnerlist>div p{
+	text-align: center;
+	margin-top: 5px;
+	color: #727171
+}
+

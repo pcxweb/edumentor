@@ -1,0 +1,43 @@
+{
+	"Britain":{
+		"bannertop":"Britainbg.jpg",
+		"sketch": "sketch1.jpg",
+		"case":{
+			"title":"英国",
+			"imgs": ["Britaincase1.png","Britaincase2.png","Britaincase3.png","Britaincase4.png"]
+		}
+	},
+	"Hongkong":{
+		"bannertop":"hkbg.jpg",
+		"sketch": "sketch2.jpg",
+		"case":{
+			"title":"香港",
+			"imgs": ["hkcase1.png","hkcase2.png","hkcase3.png","hkcase4.png"]
+		}
+	},
+	"Canada":{
+		"bannertop":"Canadabg.jpg",
+		"sketch": "sketch3.jpg",
+		"case":{
+			"title":"加拿大",
+			"imgs": []
+		}
+	},
+	"America":{
+		"bannertop":"Americabg.jpg",
+		"sketch": "sketch4.jpg",
+		"case":{
+			"title":"美国",
+			"imgs": ["Americacase1.png","Americacase2.png","Americacase3.png","Americacase4.png"]
+		}
+	},
+	"Australia":{
+		"bannertop":"Australiabg.jpg",
+		"sketch": "sketch5.jpg",
+		"case":{
+			"title":"澳洲",
+			"imgs": ["Australiacase1.png","Australiacase2.png","Australiacase3.png","Australiacase4.png"]
+		}
+	}
+	
+}

@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+#certify {
+	position: relative;
+	width:100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#certify .swiper-container {
+	padding-bottom: 60px;
+}
+
+#certify  .swiper-slide {
+	width: 300px;
+	height: 380px;
+	background: #fff;
+	box-shadow: 0 8px 30px #ddd;
+	border:1px solid #ddd;
+	border-radius: 5px;
+	padding:20px 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+
+#certify .swiper-pagination {
+	width: 100%;
+	bottom: 20px;
+}
+
+#certify .swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 5px;
+	border: 3px solid #fff;
+	background-color: #d5d5d5;
+	width: 10px;
+	height: 10px;
+	opacity: 1;
+}
+
+#certify .swiper-pagination-bullets .swiper-pagination-bullet-active {
+	border: 3px solid #00aadc;
+	background-color: #fff;
+}
+
+#certify .swiper-button-prev {
+	left: -30px;
+	width: 45px;
+	height: 45px;
+	background: url(../img/wm_button_icon.png) no-repeat;
+	background-position: 0 0;
+	background-size: 100%;
+}
+
+#certify .swiper-button-prev:hover {
+	background-position: 0 -46px;
+	background-size: 100%
+}
+
+#certify .swiper-button-next {
+	right: -30px;
+	width: 45px;
+	height: 45px;
+	background: url(../img/wm_button_icon.png) no-repeat;
+	background-position: 0 -93px;
+	background-size: 100%;
+}
+
+#certify .swiper-button-next:hover {
+	background-position: 0 -139px;
+	background-size: 100%
+}
+
+.item .img-box{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	overflow: hidden;
+	background-color:#ededed;
+	line-height: 100px;
+	text-align: center;
+	margin:10px auto;
+}
+.item .img-box img{
+	min-width: 100px;
+	width: auto;
+	height: 100%;
+	
+}
+.item .zh-name{
+	font-size: 20px;
+	color: #3e3a38;
+	font-weight: bold;
+}
+.item .zh-name span{
+	display: inline-block;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 2px solid #3e3a38;
+}
+.item  .city{
+	margin: 0 auto;
+	font-size: 16px;
+	margin-top: 5px;
+	color: #f39800;
+	font-weight: bold;
+}
+.item  .contact{
+	max-width: 200px;
+	display: inline-block;
+	font-size: 12px;
+	text-align: center;
+	color: #727171;
+	margin: 10px auto;
+}
+.item  .contact button{
+	max-width: 200px;
+	width: 100%;
+	text-align: center;
+	background-color: #f39800;
+	color: #fff;
+	font-size: 18px;
+	padding:5px 0;
+	border-radius: 20px;
+}
