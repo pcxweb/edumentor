@@ -167,9 +167,8 @@ section p{
 /*内容标题部分*/
 .conbox h2{
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   color: #727171;
-  font-weight: bold;
 }
 .conbox p.icon{
   width: 100%;
