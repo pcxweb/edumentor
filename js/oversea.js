@@ -157,7 +157,7 @@ $(function(){
 			var trange = countryjson[countrys].target_range
 			var tcycle = countryjson[countrys].target_cycle
 			// 背景图
-			$("#sketch").css("backgroundImage","url('/own/web/img/"+countryjson[countrys].sketch+"')")
+			$("#sketch").css("backgroundImage","url('img/"+countryjson[countrys].sketch+"')")
 			$("#sketch .target_country").html(copstr)
 			$("#sketch .target_education").text(teducation)
 			$("#sketch .target_range").text(trange)
