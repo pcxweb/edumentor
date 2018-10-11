@@ -94,12 +94,25 @@
 	height: 35px;
 	line-height: 35px;
 	margin-bottom:0px;
+	
 }
 .center .top ul li{
 	float: left;
 	margin-right: 10px;
+	padding-top: 15px;
 	min-width: 100px;
 	text-align: center;
+	position: relative;
+}
+	/*热门图标*/
+.center .top i{
+	width: 20px;
+	position: absolute;
+	right: 0px;
+	top:0px;
+}
+.center .top i img{
+	width: 100%;
 }
 .center .bottom{
 	border:1px solid #f29700;
@@ -111,6 +124,8 @@
 .center .bottom img{
 	width: 100%;
 }
+
+
 
 #menulist .right{
 	background-color: #eee;

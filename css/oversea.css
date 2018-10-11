@@ -1,50 +1,136 @@
+.bannerbg{
+	position: relative;
+}
 .bannerbg img{
 	width: 100%;
 	height: auto
 }
-#sketch img{
-	width: 100%;
+.bannerbg .banner_content{
+	position: absolute;
+	top:50%;
+	left:10%;
+	height: 80%;
+	transform: translateY(-50%);
 }
+.banner_content,.banner_content a{
+	color: #fff;
+}
+.banner_content .en-name,.banner_content .en-name2{
+	font-size: 3rem;
+}
+.banner_content .zh-name,.banner_content .zh-name2{
+	font-size: 6rem;
+	font-weight: bolder;
+}
+.banner_content .btnbox{
+	margin:20px 0;
+	font-size: 26px;
+}
+.banner_content .btnbox button{
+	padding:5px 20px;
+	background-color: #fff;
+	color: #f39800;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 0 #f39800;
+}
+.banner_content .bmenu{
+	font-size: 20px;
+	position: absolute;
+	bottom:20px;
+}
+.banner_content .bmenu .item{
+	margin-bottom: 10px;
+}
+.banner_content .bmenu .item p{
+	display: inline-block;
+	padding-top: 20px;
+	height: 30px;
+	margin-right: 30px;
+}
+.banner_content .bmenu .item a{
+	text-decoration: none;
+}
+.banner_content .bmenu .item a:hover{
+	font-weight: bold;
+	font-size: 26px;
+}
+/*申请简述*/
+/*#sketch img{
+	width: 100%;
+}*/
+#sketch{
+	background: url("../img/sketch1.jpg") no-repeat;
+	background-size: 100% 100%; 
+}
+#sketch .conbox{
+	width: 850px;
+	background-color: rgba(255,255,255,0.8);
+	margin: 0 auto;
+	padding:20px 30px;
+	border-radius: 15px;
+}
+#sketch .s_con{
+	margin-top: 20px;
+}
+#sketch .s_con .item{
+	margin-bottom: 20px;
+}
+#sketch .s_con .item>div{
+	float: left;
+}
+#sketch .s_con  .Four_item>div{
+	width: 25%;
+
+}
+#sketch .s_con .item>div h6{
+	font-size: 18px;
+	font-weight: bold;
+}
+#sketch .s_con .item>div h6 span{
+	padding-bottom: 3px;
+	border-bottom: 2px solid #f39800;
+}
+#sketch .s_con .item>div p{
+	color: #727171;
+	font-size: 16px;
+	margin-top: 15px;
+}
+/*经典案例*/
 #case{
 	background-image: url("../img/casebg.jpg");
 	background-size: 100%;
 }
-#casebanner {
+.casebanner {
 	position: relative;
 	width: 900px;
 	margin: 0 auto
 }
 
-#casebanner .swiper-container {
+.casebanner .swiper-container {
 	padding-bottom: 60px;
 }
 
-#casebanner  .swiper-slide {
+.casebanner  .swiper-slide {
 	width: 520px;
-	height: 408px;
 	background: #fff;
 	box-shadow: 0 8px 30px #ddd;
 	
 }
-#casebanner  .swiper-slide img{
+.casebanner  .swiper-slide img{
 	display:block;
 	width: 100%;
 }
-#casebanner  .swiper-slide p {
-	line-height: 98px;
+.casebanner  .swiper-slide p {
 	padding-top: 0;
-	text-align: center;
-	color: #636363;
 	font-size: 1.1em;
-	margin: 0;
 }
 
-#casebanner .swiper-pagination {
+.casebanner .swiper-pagination {
 	width: 100%;
 	bottom: 20px;
 }
 
-#casebanner .swiper-pagination-bullets .swiper-pagination-bullet {
+.casebanner .swiper-pagination-bullets .swiper-pagination-bullet {
 	margin: 0 5px;
 	border: 3px solid #fff;
 	background-color: #d5d5d5;
@@ -53,12 +139,12 @@
 	opacity: 1;
 }
 
-#casebanner .swiper-pagination-bullets .swiper-pagination-bullet-active {
+.casebanner .swiper-pagination-bullets .swiper-pagination-bullet-active {
 	border: 3px solid #00aadc;
 	background-color: #fff;
 }
 
-#casebanner .swiper-button-prev {
+.casebanner .swiper-button-prev {
 	left: -30px;
 	width: 45px;
 	height: 45px;
@@ -67,12 +153,12 @@
 	background-size: 100%;
 }
 
-#casebanner .swiper-button-prev:hover {
+.casebanner .swiper-button-prev:hover {
 	background-position: 0 -46px;
 	background-size: 100%
 }
 
-#casebanner .swiper-button-next {
+.casebanner .swiper-button-next {
 	right: -30px;
 	width: 45px;
 	height: 45px;
@@ -81,73 +167,74 @@
 	background-size: 100%;
 }
 
-#casebanner .swiper-button-next:hover {
+.casebanner .swiper-button-next:hover {
 	background-position: 0 -139px;
 	background-size: 100%
 }
-
-#ceshi .con_box{
+#case{
+	background-color: #ddd;
+}
+#case .con_box{
 	width: 520px;
 	height: auto;
 	margin:0 auto;
 	background-color: #fff;
-	border:1px solid #f39800;
 }
-#ceshi .con_box .c_title{
+#case .con_box .c_title{
 	background-color: #f39800;
 	color: #fff;
 	text-align: center;
 	font-weight: 650;
 	padding:8px 0;
 }
-#ceshi .con_box .c_title p{
+#case .con_box .c_title p{
 	font-size: 26px;
 }
-#ceshi .con_box .c_center>div{
+#case .con_box .c_center>div{
 	width: 50%;
 	float: left;
 	box-sizing: border-box;
 }
-#ceshi .con_box .c_center>div:last-child{
+#case .con_box .c_center>div:last-child{
 	border-left: 2px solid #f39800;
 }
-#ceshi .con_box .c_center h4{
+#case .con_box .c_center h4{
 	text-align: center;
 }
-#ceshi .con_box .c_center h4 span{
+#case .con_box .c_center h4 span{
 	display: inline-block;
 	background-color: #f39800;
 	color: #fff;
 	padding:5px 10px;
 }
-#ceshi .con_box .c_center .txt{
+#case .con_box .c_center .txt{
 	padding:10px;
 	font-size: 16px;
 }
-#ceshi .con_box .c_center .txt p{
+#case .con_box .c_center .txt p{
 	font-size: 16px;
 }
-#ceshi .con_box .c_bottom{
+#case .con_box .c_bottom{
 	border-top: 2px solid #f39800;
 }
-#ceshi .con_box .c_bottom{
+#case .con_box .c_bottom{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding:10px 0;
 }
-#ceshi .con_box .c_bottom .b_title{
+#case .con_box .c_bottom .b_title{
 	width: 100px;
 	text-align: center;
 }
-#ceshi .con_box .c_bottom .b_title span{
+#case .con_box .c_bottom .b_title span{
 	display: inline-block;
 	background-color: #f39800;
 	color: #fff;
 	padding:5px 10px;
 	font-size: 16px;
 }
-#ceshi .con_box .c_bottom .txt{
+#case .con_box .c_bottom .txt{
 	width: 280px;
 	font-size: 16px;
 }
