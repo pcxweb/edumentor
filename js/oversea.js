@@ -240,5 +240,28 @@ $(function(){
 
 		}
 	}
+
+
+	// 学生感言切换
+	$("#student_say .saycon .location .item").mouseover(function(){
+		var e = window.event || event; 
+		if ( e.stopPropagation ){ //如果提供了事件对象，则这是一个非IE浏览器 
+		e.stopPropagation(); 
+		}else{ 
+		//兼容IE的方式来取消事件冒泡 
+		window.event.cancelBubble = true; 
+		} 
+	})
+	$("#student_say .saycon .location").mouseover(function(){
+		var e = window.event || event; 
+		if ( e.stopPropagation ){ //如果提供了事件对象，则这是一个非IE浏览器 
+		e.stopPropagation(); 
+		}else{ 
+		//兼容IE的方式来取消事件冒泡 
+		window.event.cancelBubble = true; 
+		} 
+		$(this).find(".item").addClass("active")
+		$(this).siblings(".location").find(".item").removeClass("active")
+	})
 	
 })

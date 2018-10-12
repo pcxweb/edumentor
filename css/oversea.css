@@ -238,3 +238,220 @@
 	width: 280px;
 	font-size: 16px;
 }
+/*学生感言*/
+#student_say{
+	background: url(../img/studentsaybg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+#student_say .saycon{
+	width: 900px;
+	margin:0 auto;
+	text-align: center;
+	position: relative;
+}
+#student_say .saycon img{
+	width: 100%;
+}
+#student_say .saycon .location{
+	position: absolute;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+#student_say .saycon .canada_location{
+	left: 132px;
+    top: 42px;
+    width: 103px;
+    height: 128px;
+}
+#student_say .saycon .usa_location{
+	left: 155px;
+    top: 173px;
+    width: 103px;
+    height: 112px;
+}
+#student_say .saycon .uk_location{
+	left: 415px;
+    top: 126px;
+    width: 103px;
+    height: 117px;
+}
+#student_say .saycon .newpo_location{
+	right: 201px;
+    bottom: 208px;
+    width: 103px;
+    height: 109px;
+}
+#student_say .saycon .aus_location{
+	right: 103px;
+    bottom: 126px;
+    width: 103px;
+    height: 80px;
+}
+#student_say .saycon .location .item{
+	position: absolute;
+	top: -150px;
+    left: -26px;
+	background-color: #fff;
+	padding:15px;
+	width: 500px;
+	box-shadow: 0 0 10px 0 #666;
+	text-align: left;
+	z-index: 66;
+	margin-left: -250px;
+	display: none;
+}
+#student_say .saycon .location .active{
+	display: block;
+}
+#student_say .saycon .location .item .top>div{
+	float: left;
+}
+#student_say .saycon .location .item .img_box{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-right: 20px;
+}
+#student_say .saycon .location .item .img_box img{
+	width: 100%;
+}
+.location .item .top{
+	margin-bottom: 15px;
+}
+.location .item .info .name-school{
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.location .item .info .name{
+	font-size: 30px;
+}
+.location .item .info .school{
+	font-size: 24px;
+}
+.location .item .info p{
+	color: #727171;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+.location .item .info p:first-of-type{
+	text-decoration: underline;
+	font-size: 22px;
+}
+.location .item .bottom{
+	font-size: 22px;
+	position: relative;
+	padding:10px 0px;
+	padding-bottom: 0px;
+	
+}
+.location .item .bottom p{
+	text-indent: 2em;
+	margin-bottom: 0px;
+}
+.location .item .bottom strong{
+	color: #f39800;
+	font-size: 60px;
+	font-weight: bold;
+	position: absolute;
+	
+}
+.location .item .bottom strong:nth-child(1){
+	left:0;
+	top:-14px;
+}
+.location .item .bottom strong:nth-child(2){
+	right:0;
+	bottom: -45px;
+}
+ /*方向线*/
+.location .item .line{
+	display: inline-block;
+    position: absolute;
+    bottom: -37px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 125px;
+    height: 36px;
+    border: 1px dashed #727171;
+    border-right: 0;
+    border-top: 0;
+}
+#student_say .saycon .usa_location .item:nth-child(1){
+	top: -206px;
+    left: -45px;
+}
+#student_say .saycon .usa_location .item:nth-child(2){
+	top: 133px;
+    left: 214px;
+}
+#student_say .saycon .usa_location .item:nth-child(2) .line{
+	bottom: 189px;
+    left: -19px;
+    width: 36px;
+    height: 113px;
+}
+#student_say .saycon .uk_location .item:nth-child(1){
+	top: -158px;
+    left: 353px;
+}
+#student_say .saycon .uk_location .item:nth-child(1) .line{
+    width: 100px;
+    height: 100px;
+    bottom: 16px;
+    left: -50px;
+    border-top: 1px dashed #727171;
+    border-bottom: 0;
+}
+#student_say .saycon .uk_location .item:nth-child(2){
+	top: 158px;
+    left: 0px;
+}
+#student_say .saycon .uk_location .item:nth-child(2) .line{
+    width: 34px;
+    height: 62px;
+    bottom: 243px;
+    left: 240px;
+    border-top: 1px dashed #727171;
+    border-bottom: 0;
+}
+#student_say .saycon .newpo_location .item:nth-child(1){
+	top: -260px;
+    left: 200px;
+}
+#student_say .saycon .newpo_location .item:nth-child(1) .line{
+    width: 69px;
+    height: 127px;
+    bottom: -128px;
+    left: 174px;
+    border-bottom: 1px dashed #727171;
+    border-right: 1px dashed #727171;
+    border-left: 0;
+}
+#student_say .saycon .aus_location .item:nth-child(1){
+	top: -337px;
+    left: 30px;
+}
+#student_say .saycon .aus_location .item:nth-child(1) .line{
+    width: 39px;
+    height: 127px;
+    bottom: -128px;
+    left: 260px;
+    
+}
+#student_say .saycon .aus_location .item:nth-child(2){
+	top: -18px;
+    left: -308px;
+}
+#student_say .saycon .aus_location .item:nth-child(2) .line{
+    width: 119px;
+    height: 35px;
+    bottom: 122px;
+    left: 560px;
+    border-bottom: 1px dashed #727171;
+    border-right: 1px dashed #727171;
+    border-left: 0;
+    
+}
