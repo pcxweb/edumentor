@@ -8,25 +8,41 @@ $(function(){
 		var topval = $("#all_list li").eq(unit_id).position().top
 		$(".left .listmenu").css({"top":topval+"px","display":"block"})
 	}
-	$("#all_list li").click(function(){
-		
+	$("#all_list li").mouseover(function(){
+		clearTimeout(timer)
 		var beforeid = localStorage.getItem("indexsval")
 		var indexs = $(this).index();
 
 		$(this).addClass("active").siblings("li").removeClass("active")
 		var topval = $(this).position().top
-		if(beforeid==indexs){
-			// alert(beforeid)
-			$(".left .listmenu").toggle()
-		}else{
+		// if(beforeid==indexs){
+		// 	// alert(beforeid)
+		// 	$(".left .listmenu").toggle()
+		// }else{
 			$(".left .listmenu").css({"top":topval+"px","display":"block"})
-		}
+		// }
 		tabcon(indexs,languagejson)
 
 		localStorage.setItem("indexsval",indexs)
 
 	})
-	var eletarget = $("#all_list li span")
+	var eletarget = $("#all_list li span");
+	var timer
+	$(".left .listmenu").mouseover(function(){
+		clearTimeout(timer)
+		$(".left .listmenu").css({"display":"block"})
+		
+	})
+	$(".left .listmenu").mouseout(function(){
+		$(".left .listmenu").css({"display":"none"})
+		
+	})
+	$("#all_list li").mouseout(function(){
+		timer = setTimeout(function(){
+			$(".left .listmenu").css({"display":"none"})
+		},500)
+	})
+
 	
 })
 function tabcon(indexs,languagejson){
