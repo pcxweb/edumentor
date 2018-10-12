@@ -3,13 +3,13 @@
 }
 .bannerbg img{
 	width: 100%;
-	height: auto
+	height: auto;
+	min-height: 800px;
 }
 .bannerbg .banner_content{
 	position: absolute;
 	top:50%;
 	left:10%;
-	height: 80%;
 	transform: translateY(-50%);
 }
 .banner_content,.banner_content a{
@@ -37,9 +37,7 @@
 	font-size: 20px;
     margin-top: 120px;
 }
-.banner_content .bmenu .item{
-	margin-bottom: 10px;
-}
+
 .banner_content .bmenu .item p{
 	display: inline-block;
 	padding-top: 20px;

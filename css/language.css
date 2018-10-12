@@ -149,17 +149,16 @@
 	background-color: #e95514;
 }
 #bannerbg{
-	position: relative;
+	background-image: url("../img/stepbanner6.png");
+	background-size: 100% 100%; 
+	padding:60px 0;
+	padding-bottom: 80px;
 }
 #bannerbg img{
 	width: 100%;
 }
 /*雅思托福课程简介*/
-#bannerbg .yasi-tuofu,#bannerbg .oversea-enbase{
-	position: absolute;
-	top:20px;
-	left: 50%;
-	transform: translateX(-50%);
+#bannerbg .yasi-tuofu,#bannerbg .oversea-enbase,#bannerbg .stepmatch,#bannerbg .lunwrite,#bannerbg .internal{
 	display: none;
 }
 #bannerbg .yasi-tuofu .yasi_items>div{
@@ -192,6 +191,85 @@
 .overbox p{
 	font-size: 14px;
 }
+/*剑桥*/
+#bannerbg .stepmatch{
+	text-align: center;
+}
+#bannerbg .stepmatch h1{
+	display: inline-block;
+	font-size: 20rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+    position: relative;
+}
+#bannerbg .stepmatch h1:before{
+	content: "";
+	width:40%;
+	height: 2px;
+	background-color: #fff;
+	display: inline-block;
+	position: absolute;
+	left:0;
+	bottom:-0.8rem;
+}
+#bannerbg .stepmatch h1:after{
+	content: "";
+	width:40%;
+	height: 2px;
+	background-color: #fff;
+	display: inline-block;
+	position: absolute;
+	right:0;
+	bottom:-0.8rem;
+}
+#bannerbg .stepmatch h1 span{
+	width:20px;
+	height: 20px;
+	background-color: #fff;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+    bottom: -1.5rem;
+    border-radius: 100%;
+    margin-left: -10px;
+}
+#bannerbg .stepmatch h2{
+	font-size: 10rem;
+}
+/*论文写作*/
+#bannerbg .lunwrite{
+	padding-top: 60px;
+}
+#bannerbg .lunwrite .img_icon{
+	margin-bottom: 30px;
+}
+#bannerbg .lunwrite .img_icon img{
+	width: 100px;
+}
+#bannerbg .lunwrite{
+	font-size: 7rem;
+}
+#bannerbg .lunwrite .white{
+	color: #fff;
+}
+#bannerbg .lunwrite .zhuse{
+	color: #f39800;
+}
+/*国际课程*/
+#bannerbg .internal .internal_con{
+	width: 850px;
+	background-color: rgba(255,255,255,.6);
+	padding:50px;
+	margin:0 auto;
+	border-radius: 10px;
+}
+#bannerbg .internal .internal_con span{
+	font-size: 24px;
+	margin-bottom: 20px;
+	margin-right: 25px;
+	color: #727171;
+}
+
 /*课程简介*/
 .indexs5{
 	display: none;
@@ -232,7 +310,7 @@
 	padding:15px 0;
 }
 .brand_item .item .con img{
-	height: 60px;
+	height: 65px;
 	width: auto
 }
 .brand_item .item .con h5{

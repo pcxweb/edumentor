@@ -72,13 +72,28 @@ function tabcon(indexs,languagejson){
 	}
 	$(".left .listmenu ul").html(listr);
 	// bannerbgimg切换
-	$("#bannerbg .bannerbgimg").attr("src","img/"+languagejson[indexs].bannerbg)
+	$("#bannerbg").css("backgroundImage","url('img/"+languagejson[indexs].bannerbg+"')")
+	
 	if(indexs==5){
 		$(".indexs5").css("display","block")
+		$(".stepmatch").css("display","block")
 	}else{
 		$(".indexs5").css("display","none")
+		$(".stepmatch").css("display","none")
 	}
-	// 内容切换
+	// 论文写作
+	if(indexs==3){
+		$(".lunwrite").css("display","block")
+	}else{
+		$(".lunwrite").css("display","none")
+	}
+	// 国际课程 internal
+	if(indexs==4){
+		$(".internal").css("display","block")
+	}else{
+		$(".internal").css("display","none")
+	}
+	// 内容切换 <!-- 雅思 托福 -->
 	if(indexs==0 || indexs == 1){
 		
 		$("#bannerbg .yasi-tuofu").css("display","block");
@@ -94,6 +109,7 @@ function tabcon(indexs,languagejson){
 	}else{
 		$("#bannerbg .yasi-tuofu").css("display","none");
 	}
+	// 海外中学考试  英语基础
 	if(indexs==2 || indexs == 6){
 		$("#bannerbg .oversea-enbase").css("display","block");
 		$(".oversea-enbase h2").text(languagejson[indexs].name);
