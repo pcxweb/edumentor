@@ -68,7 +68,22 @@ var countryjson = {
 			"case":{
 				"title":"加拿大",
 				"imgs": [],
-				"content":[]
+				"content":[
+					{
+						"title":"<p>硬件不够 ，文书来凑，</p><p>一举拿下“西安大略大学”</p>",
+						"student":"某国际学校<span style=\"color: red\">在读高中生</span>，均分80，申请精算专业",
+						"advantage":"国际学校，拿加拿大文凭",
+						"inferiority":"均分不够，且雅思有一个单项是5.5",
+						"summary":"学生读的国际学校是全英授课，利用这一点跟学校争取免雅思，同时通过文书弥补均分不够的劣势"
+					},
+					{
+						"title":"<p>经验丰富，优势明显，</p><p>最终收获“ 多伦多大学”offer</p>",
+						"student":"国内本科毕业+美国研究生毕业，<span style=\"color: red\">已有三年工作经验</span>，申请加拿大MBA",
+						"advantage":"雅思，GMAT都比较高分，工作背景不错",
+						"inferiority":"二三月才开始申请当年秋季入学的MBA，时间比较紧张",
+						"summary":"突出学生的工作经历，挖掘学生在工作中的亮点，在保证速度的同时完成高质量的文书。"
+					}
+				]
 			},
 			"target_country":["加拿大"],
 			"target_education":"中学/本科/硕士",
@@ -178,7 +193,7 @@ $(function(){
 			// 经典案例
 			if(contentarr.length>0){
 				$("#case").css("display","block")
-				$(".canadaNo").css("display","inline-block")
+				
 				var conBoxstr = "";
 				for (var i = 0; i < contentarr.length; i++) {
 					conBoxstr += '<div class="swiper-slide"><div class="con_box"><div class="c_title">'+contentarr[i].title+'</div>'
@@ -232,7 +247,7 @@ $(function(){
 					})
 			}else{
 				$("#case").css("display","none")
-				$(".canadaNo").css("display","none")
+				
 			}
 
 			
