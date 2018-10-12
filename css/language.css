@@ -106,10 +106,10 @@
 }
 	/*热门图标*/
 .center .top i{
-	width: 20px;
-	position: absolute;
-	right: 0px;
-	top:0px;
+	width: 26px;
+    position: absolute;
+    right: -7px;
+    top: 1px;
 }
 .center .top i img{
 	width: 100%;
