@@ -23,8 +23,8 @@
 	font-weight: bolder;
 }
 .banner_content .btnbox{
-	margin:20px 0;
-	font-size: 26px;
+	margin:34px 0;
+	font-size: 34px;
 }
 .banner_content .btnbox button{
 	padding:5px 20px;
@@ -35,8 +35,7 @@
 }
 .banner_content .bmenu{
 	font-size: 20px;
-	position: absolute;
-	bottom:20px;
+    margin-top: 120px;
 }
 .banner_content .bmenu .item{
 	margin-bottom: 10px;
