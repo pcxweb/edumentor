@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1190, user-scalable=no">
+	<title>一盟教育</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/language.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default">
+  <div class="container-fluid container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navlist" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navlist">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">首页</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">留学 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="oversea.html?country=America">美国</a></li>
+            <li><a href="oversea.html?country=Britain">英国</a></li>
+            <li><a href="oversea.html?country=Australia">澳洲</a></li>
+            <li><a href="oversea.html?country=Canada">加拿大</a></li>
+            <li><a href="oversea.html?country=Hongkong">香港</a></li>
+          </ul>
+        </li>
+        <li class="dropdown actives">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">语言培训 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="language_train.html?language=1">雅思课程</a></li>
+            <li><a href="language_train.html?language=2">托福课程</a></li>
+            <li><a href="language_train.html?language=3">海外中学考试</a></li>
+            <li><a href="language_train.html?language=4">论文写作</a></li>
+            <li><a href="language_train.html?language=5">国际课程</a></li>
+            <li><a href="language_train.html?language=6">STEP数学</a></li>
+            <li><a href="language_train.html?language=7">英语基础课程</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <span class="fa fa-search"></span><input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Login</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+<div id="menulist">
+	<div class="container menulistbox">
+		<div class="left">
+			<div class="topall">
+				<span class="fa fa-bars"></span>
+				<span>全部课程</span>
+			</div>
+			<div class="list" id="all_list">
+				<ul>
+					<li>
+						<div class="txt">
+							<h6>雅思课程</h6>
+							<p><span>雅思进阶班</span><span>雅思冲刺班</span></p>
+						</div>
+						<div class="icon">
+							<span class="fa fa-angle-right"></span>
+						</div>
+					</li>
+					<li>
+						<div class="txt">
+							<h6>托福课程</h6>
+							<p><span>托福进阶班</span><span>托福冲刺班</span></p>
+						</div>
+						<div class="icon">
+							<span class="fa fa-angle-right"></span>
+						</div>
+					</li>
+					<li>
+						<div class="txt">
+							<h6>海外中学考试</h6>
+							<p><span>美国精英中学</span><span>英国精英中学</span></p>
+						</div>
+						<div class="icon">
+							<span class="fa fa-angle-right"></span>
+						</div>
+					</li>
+					<li>
+						<div class="txt">
+							<h6>论文写作</h6>
+							<p><span>海外生存英语</span><span>学术英语表达</span></p>
+						</div>
+						<div class="icon">
+							<span class="fa fa-angle-right"></span>
+						</div>
+					</li>
+					<li>
+						<div class="txt">
+							<h6>国际课程</h6>
+							<p><span>IGCSE数学</span><span> A LEVEL数学</span></p>
+						</div>
+						<div class="icon">
+							<span class="fa fa-angle-right"></span>
+						</div>
+					</li>
+					<li>
+						<div class="txt">
+							<h6>剑桥大学</h6>
+							<p><span>STEP数学</span></p>
+						</div>
+						<div class="icon">
+							<span class="fa fa-angle-right"></span>
+						</div>
+					</li>
+					<li>
+						<div class="txt">
+							<h6>英语基础课程</h6>
+							<p><span>English Mentor Program </span></p>
+						</div>
+						<div class="icon">
+							<span class="fa fa-angle-right"></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="listmenu">
+				<ul>
+					<li><span>阶梯数学考试STEP</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="center">
+			<div class="top">
+				<ul class="clearfix">
+					<li>雅思课程 <i><img src="img/hot.png" alt=""></i></li>
+					<li>托福课程 <i><img src="img/hot.png" alt=""></i></li>
+					<li>海外中学考试</li>
+					<li>A-Level数学</li>
+					<li>EMP课程</li>
+				</ul>
+			</div>
+			<div class="bottom">
+				<img src="img/languagelistbg.jpg" alt="">
+			</div>
+		</div>
+		<!-- <div class="right">
+			<h3>快捷报名</h3>
+			<form action="">
+				<div class="form-group">
+					<input type="text" class="form-control" name="phone" id="phone" placeholder="手机号码">
+				</div>
+				<div class="input-group">
+				  <input type="text" class="form-control" name="code" id="code" placeholder="验证码" aria-describedby="getcodebtn">
+				  <span class="input-group-addon" id="getcodebtn">获取验证码</span>
+				</div>
+				<div class="form-group">
+					<button type="button" class="btn btn-warning btn-block">立即预约</button>
+				</div>
+			</form>
+		</div> -->
+	</div>
+</div>
+<div id="bannerbg">
+	<img class="bannerbgimg" src="img/stepbanner6.png" alt="">
+	<!-- 雅思 托福 -->
+	<div class="container conbox yasi-tuofu">
+		<h2>雅思课程</h2>
+		<p class="icon"><span></span><span></span><span></span></p>
+		<div class="yasi_items">
+			<!-- <div class="row">
+				<div class="item col-md-3"><img src="img/yasi1.jpg" alt=""></div>
+				<div class="item col-md-3"><img src="img/yasi2.jpg" alt=""></div>
+				<div class="item col-md-3"><img src="img/yasi3.jpg" alt=""></div>
+				<div class="item col-md-3"><img src="img/yasi4.jpg" alt=""></div>
+			</div>
+			<div class="row">
+				<div class="item col-md-3 col-md-offset-1"><img src="img/yasi5.jpg" alt=""></div>
+				<div class="item col-md-3"><img src="img/yasi6.jpg" alt=""></div>
+				<div class="item col-md-3"><img src="img/yasi7.jpg" alt=""></div>
+			</div> -->
+		</div>
+	</div>
+	<!-- 海外中学考试  英语基础 -->
+	<div class="container conbox oversea-enbase" >
+		<h2>海外中学考试</h2>
+		<p class="icon"><span></span><span></span><span></span></p>
+		<div id="overseascon" class="overseas-item row">
+			<div class="over_item col-xs-6 col-sm-4">
+				<div class="overbox">
+					<h5>美国精英中学</h5>
+					<p>小托福  SLEP  SSAT  SAT</p>
+				</div>
+			</div>
+			<div class="over_item col-xs-6 col-sm-4">
+				<div class="overbox">
+					<h5>加拿大</h5>
+					<h5>精英寄宿中学</h5>
+					<p>小托福  SLEP  SSAT  SAT</p>
+				</div>
+			</div>
+			<div class="over_item col-xs-6 col-sm-4">
+				<div class="overbox">
+					<h5>澳洲</h5>
+					<h5>精英寄宿中学</h5>
+					<p>AEAS</p>
+				</div>
+			</div>
+			<div class="over_item col-xs-6 col-sm-4">
+				<div class="overbox">
+					<h5>香港</h5>
+					<h5>精英寄宿中学</h5>
+					<p>学校内部试题</p>
+				</div>
+			</div>
+			<div class="over_item col-xs-6 col-sm-4">
+				<div class="overbox">
+					<h5>英国</h5>
+					<h5>精英寄宿中学</h5>
+					<p>学校内部试题</p>
+				</div>
+			</div>
+			<div class="over_item col-xs-6 col-sm-4">
+				<div class="overbox">
+					<h5>新加坡</h5>
+					<h5>精英寄宿中学</h5>
+					<p>AEIS</p>
+				</div>
+			</div>
+		</div>
+		<div id="enbasecon" class="overseas-item row">
+			<div class="over_item col-xs-6 col-sm-4">
+				<div class="overbox">
+					<h5>English Mentor</h5>
+					<h5>Program 一级</h5>
+					<p> — KET — </p>
+				</div>
+			</div>
+			<div class="over_item col-xs-6 col-sm-4">
+				<div class="overbox">
+					<h5>English Mentor</h5>
+					<h5>Program 二级</h5>
+					<p> — PET — </p>
+				</div>
+			</div>
+			<div class="over_item col-xs-6 col-sm-4">
+				<div class="overbox">
+					<h5>English Mentor</h5>
+					<h5>Program 三级</h5>
+					<p> — FCE — </p>
+				</div>
+			</div>
+			<div class="over_item col-xs-6 col-sm-4">
+				<div class="overbox">
+					<h5>English Mentor</h5>
+					<h5>Program 四级</h5>
+					<p> — CAE — </p>
+				</div>
+			</div>
+			<div class="over_item col-xs-6 col-sm-4">
+				<div class="overbox">
+					<h5>English Mentor</h5>
+					<h5>Program 五级</h5>
+					<p> — CPE — </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<main>
+	<!-- 课程简介  剑桥大学专属 -->
+	<section id="classbase" class="indexs5">
+		<div class="container conbox">
+			<h2>课程简介</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="con-item">
+				<div class="item">
+					<div class="title"><span class="fa fa-caret-right"></span><span>什么是STEP</span></div>
+					<div class="desc">阶梯数学考试STEP是 Sixth Term Examination Papers 的简称，由剑桥国际英语认证 (Cambridge English Language Assessment) 所属的录取考试服务部门(Admissions Testing Service) 组织的一项数学考试。</div>
+				</div>
+				<div class="item">
+					<div class="title"><span class="fa fa-caret-right"></span><span>招生对象</span></div>
+					<div class="desc">志在冲刺英国G5类的大学学霸</div>
+				</div>
+				<div class="item">
+					<div class="title"><span class="fa fa-caret-right"></span><span>课程内容</span></div>
+					<div class="desc">以历年试卷为主要内容，引导学生建立完整的思维模式。</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 剑桥大学专属 文字条 -->
+	<section id="term" class="indexs5">
+		<img src="img/termbg.jpg" width="100%" alt="">
+	</section>
+	<!-- 品牌优势 -->
+	<section id="brand_advantage">
+		<div class="container conbox">
+			<h2>品牌优势</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="brand_item clearfix">
+				<div class="item">
+					<div class="con">
+						<img src="img/culture1.png" alt="">
+						<h5>班型小</h5>
+						<p>小班授课，师生互动性强，教学更具针对性</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="con">
+						<img src="img/culture2.png" alt="">
+						<h5>服务全</h5>
+						<p>听说读写分项授课，精准锁定考试范围</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="con">
+						<img src="img/culture3.png" alt="">
+						<h5>名师多</h5>
+						<p>海外名校留学及工作多年的精英教师授课</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="con">
+						<img src="img/culture4.png" alt="">
+						<h5>课程精</h5>
+						<p>授课教师、指导老师双管齐下，教学辅导双结合</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="con">
+						<img src="img/culture2.png" alt="">
+						<h5>提分易</h5>
+						<p>侧重学员实战学习，数百名学员收获高分成绩单</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 高分学员 -->
+	<section id="student">
+		<div class="container conbox">
+			<h2>高分学员</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="student_item clearfix row">
+				<div class="col-xs-6 col-md-4">
+					<img src="img/student1.jpg" alt="">
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<img src="img/student2.jpg" alt="">
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<img src="img/student3.jpg" alt="">
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<img src="img/student4.jpg" alt="">
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<img src="img/student5.jpg" alt="">
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<img src="img/student6.jpg" alt="">
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<img src="img/student7.jpg" alt="">
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<img src="img/student8.jpg" alt="">
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<img src="img/student9.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 小区地址 剑桥大学专属 -->
+	<section id="school_address" class="indexs5">
+		<div class="container conbox">
+			<h2>校区地址</h2>
+			<p class="icon"><span></span><span></span><span></span></p>
+			<div class="conitem row">
+				<div class="col-md-6 col-xs-12 info-item">
+					<div class="title">中山校区</div>
+					<div class="con">
+						<p>地址：中山市东区夏洋街54号1层（路易酒店懂100米）</p>
+						<p>电话：0760-88723883</p>
+						<p>开放时间： 9:00 - 18:00</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<img src="img/addresspath.png" height="132" alt="">
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<img src="img/wechat_code.png" height="132" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer>
+	<div class="container clearfix" id="footbox">
+		<div class="f-desc">
+			<div class="item">
+				<h6>全国分校</h6>
+				<div class="con">
+					<span>广州总部</span>
+					<span>广州越秀分部</span>
+					<span>中山</span>
+					<span>佛山</span>
+					<span>惠州</span>
+				</div>
+			</div>
+			<div class="item">
+				<h6>欢迎来访</h6>
+				<div class="con2">
+					<p><span>广州总部：</span>广东省广州市天河区五山路一号华晟大厦10楼01单元</p>
+					<p><span>广州越秀分部：</span>广州市越秀区环市东路371号世贸中心南塔1811室</p>
+					<p><span>中山：</span>广东省中山市东区夏洋街54号1层</p>
+					<p><span>佛山：</span>广东省佛山市禅城区祖庙路33号百花广场16楼10-11室</p>
+					<p><span>惠州：</span>广东省惠州市惠城区惠沙堤一路水印尚堤大厦3楼309</p>
+				</div>
+			</div>
+			<div class="item">
+				<h6>办公时间</h6>
+				<div class="con">
+					<p>星期一至星期日 上午9：30-下午6：30</p>
+				</div>
+			</div>
+		</div>
+		<div class="f-code">
+			<h6>关注一盟教育</h6>
+			<div class="f-img clearfix">
+				<div><img src="img/wechatcode.png" alt=""><p>官方微信</p></div>
+				<div><img src="img/weibocode.png" alt=""><p>官方微博</p></div>
+			</div>
+			<div class="phonebox">
+				<img src="img/phoneimg.png" alt="">
+			</div>
+		</div>
+
+	</div>
+</footer>
+</body>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/language.js"></script>
+</html>
