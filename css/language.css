@@ -337,6 +337,9 @@
 /*高分学员*/
 #student{
 	background-color: #eee;
+	background: url("../img/hign_scorebg.jpg") no-repeat;
+	background-size: 100% auto; 
+
 }
 #student .student_item>div{
 	text-align: center;
@@ -347,6 +350,9 @@
 	max-width: 300px;
 }
 /*校区地址*/
+#school_address{
+	background-color: #f2f2f2;
+}
 #school_address .conitem{
 	margin-top:20px;
 }
