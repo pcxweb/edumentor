@@ -124,8 +124,12 @@
 .center .bottom img{
 	width: 100%;
 }
-
-
+.center .top a{
+	color: #3e3a39;
+}
+.center .top a:hover{
+	color: #f39800;
+}
 
 #menulist .right{
 	background-color: #eee;
@@ -144,6 +148,9 @@
 #menulist .right form #getcodebtn{
 	background-color: #f0ad4e;
     color: #fff;
+}
+#menulist .left ul{
+	margin-bottom: 0px;
 }
 #menulist .left li.active{
 	background-color: #e95514;

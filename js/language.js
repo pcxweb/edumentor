@@ -1,5 +1,21 @@
 var languagejson = [{"id":1,"name":"雅思课程","menu":[["雅思基础入门班","雅思基础初级班","雅思基础中级班","雅思基础高级班"],["雅思进阶班","雅思进阶强化班","雅思冲刺班"]],"bannerbg":"stepbanner1.png","imglist":["yasi1.jpg","yasi2.jpg","yasi3.jpg","yasi4.jpg","yasi5.jpg","yasi6.jpg","yasi7.jpg"]},{"id":2,"name":"托福课程","menu":[["托福基础入门班","托福基础初级班","托福基础中级班","托福基础高级班"],["托福进阶班","托福进阶强化班","托福冲刺班"]],"bannerbg":"stepbanner2.png","imglist":["tuofu1.jpg","tuofu2.jpg","tuofu3.jpg","tuofu4.jpg","tuofu5.jpg","tuofu6.jpg","tuofu7.jpg"]},{"id":3,"name":"海外中学考试","menu":[["加拿大精英寄宿中学","美国精英中学","澳洲精英寄宿中学","香港精英寄宿中学"],["英国精英寄宿中学","新加坡政府公立学校"]],"bannerbg":"stepbanner3.png"},{"id":4,"name":"论文写作","menu":[["论文写作","海外生存英语","学术英语表达"]],"bannerbg":"stepbanner4.png"},{"id":5,"name":"国际课程","menu":[["IGCSE数学","A LEVEL物理","A LEVEL化学","A LEVEL数学","IGCSE物理","IGCSE化学"],["Calculus BC（微积分BC）","Statistics（统计学）","Calculus AB（微积分AB）"],["Computer science（计算机数学）","Biology（生物学）","Physics BC（物理BC）"],["Microeconomics（微观经济）","Macroeconomics（宏观经济学）"]],"bannerbg":"stepbanner5.png"},{"id":6,"name":"STEP数学","menu":[["阶梯数学考试STEP"]],"bannerbg":"stepbanner6.png"},{"id":7,"name":"英语基础课程","menu":[["English Mentor Program三级(FCE)","English Mentor Program二级(PET)","English Mentor Program一级(KET)"],["English Mentor Program五级(CPE)","English Mentor Program四级(CAE)"]],"bannerbg":"stepbanner7.png"}]
 $(function(){
+	// 导航菜单高度位置--填充多余部分
+	var centerH = $("#menulist .center").height();
+	console.log(centerH)
+	var all_listH = $("#all_list").height()+35;
+	if(centerH>all_listH){
+		var yuH = centerH - all_listH
+		var zpadding = yuH/14 + 5;
+		console.log(zpadding)
+		$("#menulist .left .list li").css("padding",zpadding+"px 10px")
+	}
+	
+	
+
+
+
+
 	var urlval = getUrlArgObject();
 	if(urlval.language){
 		var unit_id = parseInt(urlval.language)-1;
@@ -42,6 +58,16 @@ $(function(){
 			$(".left .listmenu").css({"display":"none"})
 		},500)
 	})
+
+	// 点击中间顶部导航变化跳转
+	$("#menulist .toplist").click(function(){
+		var ids = $(this).attr("data-id");
+		$("#all_list li").eq(ids).addClass("active").siblings("li").removeClass("active")
+		var topval = $("#all_list li").eq(ids).position().top
+		$(".left .listmenu").css({"top":topval+"px","display":"block"})
+		tabcon(ids,languagejson)
+	})
+
 
 	
 })
