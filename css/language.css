@@ -354,11 +354,19 @@
 	background-color: #f2f2f2;
 }
 #school_address .conitem{
+	width: 928px;
+	margin:0 auto;
 	margin-top:20px;
 }
 #school_address .conitem>div{
 	margin-bottom: 10px;
+	float: left;
+	display: inline-block;
 }
+#school_address .conitem .info-item{
+	margin-right: 20px;
+}
+
 #school_address .info-item .title{
 	background-color: #dbdcdc;
 	padding:5px 10px;
