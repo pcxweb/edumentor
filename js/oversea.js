@@ -75,11 +75,11 @@ var countryjson = {
 						"summary":"平时成绩不突出，申请材料一般的学生需要提前规留学申请， 提高文书质量。"
 					},
 					{
-						"title":"<p>专业指导+全套方案，</p><p>叩开名校“香港大学”大门</p>",
-						"student":"某重点本科双学位黎同学，<span style=\"color: red\">雅思6分</span>，申请电子商务专业",
-						"advantage":"学生对申请积极配合，学历背景好",
-						"inferiority":"雅思成绩竞争力不强 ，学生只报一所大学",
-						"summary":"电商专业相对其他商科竞争力小，相对录取机率大，在文书背景中有很好的提升。"
+						"title":"<p>专业指导+全套方案，</p><p>叩开名校“香港中文大学”大门</p>",
+						"student":"国内985，211刘同学，电子商务专业，均分83分",
+						"advantage":"学校背景和成绩都不错",
+						"inferiority":"雅思6.5有一个单项5.5，<span style=\"color: red\">香港商科竞争激烈</span>",
+						"summary":"香港申请是先到先得，要尽早递交，并指导学生准备好面试。"
 					}
 				]
 			},
@@ -271,50 +271,59 @@ $(function(){
 						+ '<div class="txt">'+contentarr[i].student+'</div>'
 						+ '</div><div class="right"><h4><span>申请优势和劣势</span></h4><div class="txt">'
 						+ '<p><strong>优势：</strong>'+contentarr[i].advantage+'</p><p><strong>劣势：</strong>'+contentarr[i].inferiority+'</p>'
-						+ '</div></div></div><div class="c_bottom clearfix"><div class="b_title"><span>总结</span></div>'
-						+ '<div class="txt">'+contentarr[i].summary+'</div></div></div></div>'
+						+ '</div></div></div><div class="c_bottom clearfix"><div><div class="b_title"><span>总结</span></div>'
+						+ '<div class="txt">'+contentarr[i].summary+'</div></div></div></div></div>'
 				}
 				$("#ceshibanner .swiper-wrapper").html(conBoxstr)
 
 				certifySwiper = new Swiper('#ceshibanner .swiper-container', {
-						watchSlidesProgress: true,
-						slidesPerView: 'auto',
-						centeredSlides: true,
-						loop: true,
-						loopedSlides: contentarr.length, //轮播的总个数
-						navigation: {
-							nextEl: '.swiper-button-next',
-							prevEl: '.swiper-button-prev',
-						},
-						on: {
-							progress: function(progress) {
-								for (i = 0; i < this.slides.length; i++) {
-									var slide = this.slides.eq(i);
-									var slideProgress = this.slides[i].progress;
-									modify = 1;
-									if (Math.abs(slideProgress) > 1) {
-										modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
-									}
-									translate = slideProgress * modify * 260 + 'px';
-									scale = 1 - Math.abs(slideProgress) / 5;
-									zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
-									slide.transform('translateX(' + translate + ') scale(' + scale + ')');
-									slide.css('zIndex', zIndex);
-									slide.css('opacity', 1);
-									if (Math.abs(slideProgress) > 3) {
-										slide.css('opacity', 0);
-									}
+					watchSlidesProgress: true,
+					slidesPerView: 'auto',
+					centeredSlides: true,
+					loop: true,
+					loopedSlides: contentarr.length, //轮播的总个数
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+					on: {
+						progress: function(progress) {
+							for (i = 0; i < this.slides.length; i++) {
+								var slide = this.slides.eq(i);
+								var slideProgress = this.slides[i].progress;
+								modify = 1;
+								if (Math.abs(slideProgress) > 1) {
+									modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
 								}
-							},
-							setTransition: function(transition) {
-								for (var i = 0; i < this.slides.length; i++) {
-									var slide = this.slides.eq(i)
-									slide.transition(transition);
+								translate = slideProgress * modify * 260 + 'px';
+								scale = 1 - Math.abs(slideProgress) / 5;
+								zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+								slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+								slide.css('zIndex', zIndex);
+								slide.css('opacity', 1);
+								if (Math.abs(slideProgress) > 3) {
+									slide.css('opacity', 0);
 								}
-
 							}
+						},
+						setTransition: function(transition) {
+							for (var i = 0; i < this.slides.length; i++) {
+								var slide = this.slides.eq(i)
+								slide.transition(transition);
+							}
+
 						}
-					})
+					}
+				})
+				var con_boxnum = $("#case .con_box")
+				for (var j = 0; j < con_boxnum.length; j++) {
+					var conboxH = $(con_boxnum[j]).height();
+					var titleH = $(con_boxnum[j]).find(".c_title").height()
+					var centerH = $(con_boxnum[j]).find(".c_center").height()
+					$(con_boxnum[j]).find(".c_bottom").height(conboxH-(titleH+centerH+20))
+				}
+				
+				
 			}else{
 				$("#case").css("display","none")
 				

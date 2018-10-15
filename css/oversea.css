@@ -173,9 +173,10 @@
 }
 #case .con_box{
 	width: 520px;
-	height: auto;
+	min-height: 400px;
 	margin:0 auto;
 	background-color: #fff;
+
 }
 #case .con_box .c_title{
 	background-color: #f39800;
@@ -219,6 +220,11 @@
 	align-items: center;
 	justify-content: center;
 	padding:10px 0;
+}
+#case .con_box .c_bottom>div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 #case .con_box .c_bottom .b_title{
 	width: 100px;
