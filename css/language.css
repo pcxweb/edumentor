@@ -124,6 +124,9 @@
 .center .bottom img{
 	width: 100%;
 }
+#bottom_swiper .swiper-pagination-bullet-active{
+	background: #f39800;
+}
 .center .top a{
 	color: #3e3a39;
 }
