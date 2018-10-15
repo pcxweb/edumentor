@@ -69,7 +69,7 @@ var countryjson = {
 					},
 					{
 						"title":"<p>双非，低语言 ，</p><p>完美逆袭“香港中文大学”</p>",
-						"student":"广州<span style=\"color: red\">双非院校</span>杨同学，<span style=\"color: red\">均分85分</span>，雅思6.5，申请专业社会工作",
+						"student":"广州<span style=\"color: red\">双非院校</span>杨同学，<span style=\"color: red\">均分85分</span>，雅思6.5，申请社会工作专业",
 						"advantage":"文书包装漂亮，面试超常发挥",
 						"inferiority":"之前申请失利，对此次申请信心不足",
 						"summary":"平时成绩不突出，申请材料一般的学生需要提前规留学申请， 提高文书质量。"
