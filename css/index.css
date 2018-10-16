@@ -69,38 +69,6 @@
 	background-color: transparent;
 	color: #cacaca;
 }
-/*内容部分*/
-/*.conbox h2{
-	text-align: center;
-	font-size: 25px;
-	color: #727171;
-	font-weight: bold;
-}
-.conbox p.icon{
-	width: 100%;
-	font-size: 12px;
-	color: #f39800;
-	text-align: center;
-
-}
-.conbox p.icon span{
-	display: inline-block;
-	width: 5px;
-	height: 5px;
-	background-color: #f39800;
-	border-radius: 100%;
-	margin:0 3px;
-}
-.conbox .txtbox .txt-title{
-	font-weight: bold;
-	font-size: 20px;
-	text-align: center;
-	margin-bottom: 10px;
-}
-.conbox .txtbox p{
-	font-size: 12px;
-	color: #727171;
-}*/
 .conbox .iconbox .item{
 	text-align: center;
 	margin-top: 20px;
@@ -383,7 +351,6 @@
 #major .major_box .items h3{
 	margin-top: 10px;
 	font-weight: bold;
-	color: #727171;
 }
 #major .major_box .items ul li{
 	margin-bottom: 5px;
