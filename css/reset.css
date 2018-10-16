@@ -72,7 +72,9 @@ a {color: #25a4bb;text-decoration: none;}
 #nav .dropdown-menu li:last-child{
    border-bottom:none;
 }
-
+.navbar-default .navbar-nav{
+  margin-left: 60px;
+}
 @media (min-width: 768px){
   .navbar-default .navbar-nav{
     height: 80px;
