@@ -206,11 +206,18 @@ footer{
 }
 #footbox>div{
   float: left;
-  width: 50%;
 }
-
+#footbox .f-desc{
+  width: 60%
+}
+#footbox .f-code{
+  width: 40%
+}
 #footbox .f-desc .con span{
   margin-right: 10px;
+}
+#footbox .f-desc .con2 span.phone{
+  margin-left: 20px;
 }
 #footbox .f-desc .item{
   margin-bottom: 20px;
@@ -227,7 +234,7 @@ footer{
   margin-right: 50px;
 }
 #footbox .f-code img{
-  width: 90px;
+  width: 102px;
   height: auto;
 }
 #footbox .f-code p{
