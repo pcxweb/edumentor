@@ -68,50 +68,54 @@
   </div>
 </nav>
 <div id="banner">
-	<a id="banner_img" href="javascript:;"><img src="img/banner.jpg" width="100%" alt=""></a>
+	<a id="banner_img" href="javascript:;"><img src="img/indexbanner.png" width="100%" alt=""></a>
+	<div id="say_btn">我要咨询</div>
 	<div class="contactForm" id="overseacar">
-		<div class="title">留学直通车</div>
-		<div class="base">
-			<input type="text" placeholder="姓名">
-			<input type="text" placeholder="手机号码*">
-		</div>
-		<div class="choosebox">
-			<div class="item">
-				<select name="conutry" id="conutry">
-					<option value="">国家的选择</option>
-					<option value="1">美国</option>
-					<option value="2">英国</option>
-					<option value="3">加拿大</option>
-					<option value="4">澳洲</option>
-					<option value="5">新西兰</option>
-					<option value="6">中国香港</option>
-					<option value="7">其他</option>
-				</select>
+		<form action="" id="oversea_form">
+			<div class="title">留学直通车</div>
+			<div class="base">
+				<input type="text" id="seaname" name="name" placeholder="姓名">
+				<input type="text" id="seaphone" name="phone" placeholder="手机号码*">
 			</div>
-			<div class="item">
-				<select name="conutry" id="dates">
-					<option value="">计划出国时间</option>
-					<option value="1">今年</option>
-					<option value="2">2019</option>
-					<option value="3">2020</option>
-					<option value="3">三年以后</option>
-				</select>
+			<div class="choosebox">
+				<div class="item">
+					<select name="conutry" id="conutry">
+						<option value="">国家的选择</option>
+						<option value="1">美国</option>
+						<option value="2">英国</option>
+						<option value="3">加拿大</option>
+						<option value="4">澳洲</option>
+						<option value="5">新西兰</option>
+						<option value="6">中国香港</option>
+						<option value="7">其他</option>
+					</select>
+				</div>
+				<div class="item">
+					<select name="dates" id="dates">
+						<option value="">计划出国时间</option>
+						<option value="1">今年</option>
+						<option value="2">2019</option>
+						<option value="3">2020</option>
+						<option value="3">三年以后</option>
+					</select>
+				</div>
+				
+				<div class="item">
+					<select name="apply" id="apply">
+						<option value="">我要申请</option>
+						<option value="1">高中</option>
+						<option value="2">本科</option>
+						<option value="3">硕士</option>
+						<option value="4">博士</option>
+					</select>
+				</div>
 			</div>
-			
-			<div class="item">
-				<select name="apply" id="apply">
-					<option value="">我要申请</option>
-					<option value="1">高中</option>
-					<option value="2">本科</option>
-					<option value="3">硕士</option>
-					<option value="4">博士</option>
-				</select>
+			<p class="msg" style="color:red;padding:0 15px"></p>
+			<div class="btn_box">
+				<button type="button" id="subbtn">提交</button>
+				<button type="button" id="cancelbtn">取消</button>
 			</div>
-		</div>
-		<div class="btn_box">
-			<button type="button" id="subbtn">提交</button>
-			<button type="button" id="cancelbtn">取消</button>
-		</div>
+		</form>
 	</div>
 </div>
 <main>
@@ -725,11 +729,11 @@
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       	<div class="contactForm">
-      		<form action="">
+      		<form action="" id="language_form">
 				<div class="title">语言培训咨询</div>
 				<div class="base">
-					<input type="text" placeholder="姓名">
-					<input type="text" placeholder="手机号码*">
+					<input type="text" id="lname" name="name" placeholder="姓名">
+					<input type="text" id="lphone" name="phone" placeholder="手机号码*">
 				</div>
 				<div class="choosebox">
 					<div class="item">
@@ -745,7 +749,7 @@
 						</select>
 					</div>
 					<div class="item">
-						<select name="conutry" id="tclass">
+						<select name="course" id="tclass">
 							<option value="">课程类别</option>
 							<option value="1">雅思</option>
 							<option value="2">托福</option>
@@ -757,7 +761,7 @@
 						</select>
 					</div>
 					<div class="item">
-						<select name="apply" id="tcity">
+						<select name="city" id="tcity">
 							<option value="">所在城市</option>
 							<option value="1">广州</option>
 							<option value="2">中山</option>
@@ -766,6 +770,7 @@
 						</select>
 					</div>
 				</div>
+				<p class="msg" style="color:red;padding:0 15px"></p>
 				<div class="btn_box">
 					<button type="button" id="subbtn2">提交</button>
 					<button type="button" id="cancelbtn2">取消</button>
