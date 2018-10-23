@@ -141,7 +141,7 @@ function tabcon(indexs,languagejson){
 		}else if(indexs==1){
 			imgtxt = "tuofu"
 		}
-		var imgstr = '<div class="row"><div class="item col-md-3"><img src="img/'+imgtxt+'1.jpg" alt=""></div><div class="item col-md-3"><img src="img/'+imgtxt+'2.jpg" alt=""></div><div class="item col-md-3"><img src="img/'+imgtxt+'3.jpg" alt=""></div><div class="item col-md-3"><img src="img/'+imgtxt+'4.jpg" alt=""></div></div><div class="row"><div class="item col-md-3 col-md-offset-1"><img src="img/'+imgtxt+'5.jpg" alt=""></div><div class="item col-md-3"><img src="img/'+imgtxt+'6.jpg" alt=""></div><div class="item col-md-3"><img src="img/'+imgtxt+'7.jpg" alt=""></div></div>';
+		var imgstr = '<div class="row"><div class="item col-md-3"><img src="img/'+imgtxt+'1.jpg" alt=""></div><div class="item col-md-3"><img src="img/'+imgtxt+'2.jpg" alt=""></div><div class="item col-md-3"><img src="img/'+imgtxt+'3.jpg" alt=""></div><div class="item col-md-3"><img src="img/'+imgtxt+'4.jpg" alt=""></div></div><div class="row"><div class="item col-md-3" style="margin-left:12.5%"><img src="img/'+imgtxt+'5.jpg" alt=""></div><div class="item col-md-3"><img src="img/'+imgtxt+'6.jpg" alt=""></div><div class="item col-md-3"><img src="img/'+imgtxt+'7.jpg" alt=""></div></div>';
 		$("#bannerbg .yasi-tuofu .yasi_items").html(imgstr)
 	}else{
 		$("#bannerbg .yasi-tuofu").css("display","none");
