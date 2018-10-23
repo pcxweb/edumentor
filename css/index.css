@@ -476,6 +476,7 @@
 	padding-left: 8px;
 	margin-right: 10px;
 	margin-bottom: 0px;
+	width: 100px;
 }
 .plan_con .pcon-right .pitem>p:before{
 	content: "";
