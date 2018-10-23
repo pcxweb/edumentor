@@ -23,6 +23,9 @@
 	cursor: pointer;
 }
 /*口号*/
+#banner{
+	min-height: 500px;
+}
 #banner .big_title{
   position: absolute;
   color: #fff;
